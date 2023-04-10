@@ -1,0 +1,7 @@
+@import "./globalStyles.css";
+.teste{
+    font-family: var(--estedad-vf);
+    color: var(--black-color);
+    font-weight: 200;
+    font-size: 22px;
+}
