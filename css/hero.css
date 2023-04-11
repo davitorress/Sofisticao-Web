@@ -1,7 +1,38 @@
 @import "./globalStyles.css";
-.teste{
-    font-family: var(--estedad-vf);
-    color: var(--black-color);
-    font-weight: 200;
-    font-size: 22px;
+
+header.mobile-hero {
+	width: 100%;
+	height: 80px;
+
+	display: grid;
+	grid-template-columns: 30% 40% 30%;
+	align-content: center;
+	justify-items: center;
+
+	background-color: var(--white-color);
+}
+
+header.mobile-hero .action-icons {
+	display: flex;
+	gap: 12px;
+}
+
+figure.icon img {
+	width: 24px;
+}
+
+#hero {
+	height: 55vh;
+}
+
+#hero .carousel {
+	height: 100%;
+}
+
+.back-img1 {
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(/assets/img/hero-img.png);
 }
