@@ -17,6 +17,11 @@ header.mobile-hero .action-icons {
 	gap: 12px;
 }
 
+header.mobile-hero figure {
+	display: flex;
+	align-items: center;
+}
+
 figure.icon img {
 	width: 24px;
 }
@@ -25,14 +30,51 @@ figure.icon img {
 	height: 55vh;
 }
 
-#hero .carousel {
+.carousel,
+.carousel-images {
 	height: 100%;
 }
 
-.back-img1 {
+.carousel {
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel-images {
+	display: flex;
+	transition: transform 0.5s ease-in;
+}
+
+.carousel-images .back-img {
+	flex: 0 0 100%;
+	width: 100%;
 	height: 100%;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url(/assets/img/hero-img.png);
+}
+
+.carousel-progress {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+}
+
+.progress-bar-container {
+	flex: 1;
+	height: 4px;
+	margin: 0 2px;
+	background-color: #f0f0f0;
+	overflow: hidden;
+}
+
+.progress-bar {
+	height: 100%;
+	width: 0%;
+	background-color: #ffa826;
+	transition: width 0.5s;
 }

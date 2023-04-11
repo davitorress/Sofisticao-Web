@@ -1,1 +1,103 @@
 @import "./globalStyles.css";
+
+#categories {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 35px;
+	padding: 5vh 2vw;
+}
+
+#categories h1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: fit-content;
+	color: var(--black-color);
+	font-size: 2.8rem;
+	font-family: var(--title-text);
+	text-transform: uppercase;
+}
+
+#categories h1::after {
+	content: "";
+	width: 40%;
+	height: 4px;
+	display: block;
+	background-color: var(--first-color);
+}
+
+.cat-carousel,
+.carousel-cards {
+	width: 100%;
+}
+
+.cat-carousel {
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel-cards {
+	display: flex;
+	gap: 20%;
+	transform: translateX(10%);
+}
+
+.card {
+	flex: 0 0 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+
+	width: 100%;
+	height: 100px;
+	padding: 8px 12px;
+
+	background-color: var(--white-color);
+	box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.12);
+}
+
+.card .demo-img {
+	width: 40%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(/assets/img/hero-img.png);
+}
+
+.card h2 {
+	display: flex;
+	gap: 6px;
+	color: var(--black-color);
+	font-weight: 700;
+	font-size: 1.8rem;
+	font-family: var(--subtitle-text);
+}
+
+.card h2::before {
+	content: "";
+	display: block;
+	width: 4px;
+	height: auto;
+	background-color: var(--first-color);
+}
+
+.control-prev,
+.control-next {
+	width: 36px;
+	top: 35%;
+	position: absolute;
+	cursor: pointer;
+}
+
+.control-prev {
+	left: -2vw;
+	left: 0;
+}
+
+.control-next {
+	right: -2vw;
+	right: 0;
+}
