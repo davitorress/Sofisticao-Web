@@ -30,9 +30,8 @@
 .products-list {
 	width: 100%;
 	height: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: flex-start;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
 	justify-content: space-around;
 	row-gap: 26px;
 }
@@ -82,5 +81,11 @@ button.product-action {
 @media screen and (max-width: 320px) {
 	.products-list .product-item {
 		width: min-content;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.products-list {
+		grid-template-columns: repeat(4, auto);
 	}
 }
