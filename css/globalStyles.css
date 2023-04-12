@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
 @font-face {
 	font-family: "Estedad-VF";
@@ -12,7 +13,7 @@
 	/* Colors */
 	--first-color: #ffa826;
 	--second-color: #fdcb14;
-	--gray-color:#878787;
+	--gray-color: #878787;
 	--black-color: #1d1d1d;
 	--white-color: #ffffff;
 	/* fonts mais utilizada na Hero e na dispatch*/
@@ -21,6 +22,8 @@
 	--title-text: "Fira Sans Extra Condensed", sans-serif;
 	/* usada em subtitulos e descrições */
 	--subtitle-text: "Montserrat", sans-serif;
+	/* usada no highlight */
+	--highlight-text: "Fjalla One", sans-serif;
 }
 
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
@@ -36,7 +39,7 @@
 /* Reapply the pointer cursor for anchor tags */
 a,
 button {
-	cursor: revert;
+	cursor: pointer;
 }
 /* Remove list styles (bullets/numbers) */
 ol,
@@ -109,4 +112,3 @@ body {
 	outline: none;
 	box-sizing: border-box;
 }
-
