@@ -33,7 +33,7 @@
 }
 
 .cat-carousel {
-	overflow: hidden;
+	overflow: visible;
 	position: relative;
 }
 

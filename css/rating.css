@@ -1,1 +1,80 @@
 @import "./globalStyles.css";
+
+#ratings {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	padding: 16vh 6vw;
+}
+
+#ratings h1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: fit-content;
+	color: var(--black-color);
+	font-size: 2.8rem;
+	font-family: var(--title-text);
+	text-transform: uppercase;
+}
+
+#ratings h1::after {
+	content: "";
+	width: 80%;
+	height: 4px;
+	display: block;
+	background-color: var(--first-color);
+}
+
+#ratings .ratings-list {
+	display: flex;
+	justify-content: flex-start;
+	gap: 28px;
+	width: 100%;
+	margin-left: auto;
+	padding: 12px;
+
+	overflow-x: scroll;
+	overflow-y: visible;
+}
+
+.ratings-list .rating-item {
+	flex-shrink: 0;
+	width: 300px;
+	height: 260px;
+	padding: 40px 25px;
+	color: var(--black-color);
+	font-family: var(--subtitle-text);
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.14);
+}
+
+.rating-item h2 {
+	font-weight: 600;
+	font-size: 1.8rem;
+	margin-bottom: 14px;
+}
+
+.rating-item h2::after {
+	content: "";
+	display: block;
+	width: 15%;
+	height: 4px;
+	background-color: var(--first-color);
+}
+
+.rating-item p.rating-text {
+	font-size: 1.6rem;
+	margin-bottom: 14px;
+}
+
+.rating-item .rating-author {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rating-author p {
+	font-weight: 300;
+	font-size: 1.6rem;
+}

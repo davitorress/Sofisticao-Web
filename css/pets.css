@@ -1,1 +1,71 @@
 @import "./globalStyles.css";
+
+#pets {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 48px;
+	padding: 8vh 6vw;
+}
+
+#pets h1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: fit-content;
+	color: var(--black-color);
+	font-size: 2.8rem;
+	font-family: var(--title-text);
+	text-transform: uppercase;
+}
+
+#pets h1::after {
+	content: "";
+	width: 45%;
+	height: 4px;
+	display: block;
+	background-color: var(--first-color);
+}
+
+.pets-categories {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 25px;
+}
+
+.pets-categories .pet-category {
+	width: 100%;
+	min-height: 250px;
+
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 20px 0;
+
+	border-radius: 14px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.pet-category.dogs_cats {
+	height: 320px;
+	align-items: center;
+	grid-column: span 2;
+	background-image: url(/assets/img/categories/dogs_cats.png);
+}
+
+.pet-category.birds {
+	background-image: url(/assets/img/categories/birds.png);
+}
+
+.pet-category.rodents {
+	background-image: url(/assets/img/categories/rodents.png);
+}
+
+.pets-categories .pet-category h2 {
+	font-size: 2.8rem;
+	color: var(--white-color);
+	font-family: var(--highlight-text);
+}

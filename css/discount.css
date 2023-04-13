@@ -1,1 +1,46 @@
 @import "./globalStyles.css";
+
+#discount {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 12px;
+
+	width: 100%;
+	height: 360px;
+	padding: 6vh 12vw;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url(/assets/img/discount.png);
+}
+
+#discount .discount-content {
+	display: flex;
+	align-items: center;
+	gap: 28px;
+}
+
+.discount-content p.title {
+	font-weight: 500;
+	font-size: 6.8rem;
+	color: var(--black-color);
+	font-family: var(--title-text);
+}
+
+.discount-content p.text {
+	font-size: 1.4rem;
+	color: var(--black-color);
+	font-family: var(--subtitle-text);
+}
+
+button.discount-action {
+	font-weight: 500;
+	font-size: 1.8rem;
+	text-align: center;
+	padding: 12px 0;
+	color: var(--black-color);
+	font-family: var(--title-text);
+	border: 2px solid var(--black-color);
+}
