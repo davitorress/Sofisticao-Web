@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/globalStyles.css" />
     <link rel="stylesheet" href="../css/shop/shop.css" />
+    <link rel="stylesheet" href="../css/shop/menuFilter.css">
 
     <title>Shop</title>
   </head>
@@ -17,6 +18,46 @@
           <div class="burger-line"></div>
           <div class="burger-line"></div>
         </div>
+
+        <!-- Menu burguer mobile -->
+        <menu class="menu-filter__content">
+          <h1 class="menu-filter__h1">Filtro</h1>
+            <p class="menu-filter__orderBy">Ordernar por</p>
+            <form action="" class="menu-filter__form">
+              <div class="menu-filter__input">
+
+                <input type="radio" class="radio-input">
+                <label for="" class="label-inputs">Lançamentos</label>
+              </div>
+              <div class="menu-filter__input">
+
+                <input type="radio" class="radio-input">
+                <label for="" class="label-inputs">Maior preço</label>
+              </div>
+              <div class="menu-filter__input">
+
+                <input type="radio" class="radio-input">
+                <label for="" class="label-inputs">Menor preço</label>
+              </div>
+            </form>
+            <form class="cor-filter__content">
+              <p class="cor-filter__p"> Cor</p>
+              <div class="cor-filter__inputs">
+                <input type="radio" name="Amarelo" id="" class="cor-filter__radios">
+                <input type="radio" name="Verde" id="" class="cor-filter__radios">
+                <input type="radio" name="Azul" id="" class="cor-filter__radios">
+              </div>
+              <div class="cor-filter__inputs">
+                <input type="radio" name="Vermelho" id="" class="cor-filter__radios2">
+                <input type="radio" name="Laranja" id="" class="cor-filter__radios2">
+                <input type="radio" name="Rosa" id="" class="cor-filter__radios2">
+
+              </div>
+            </form>
+            
+        </menu>
+        <!-- Menu burguer mobile fim-->
+
         <figure>
           <img src="../assets/img/mobile-logo.svg" alt="" class="logo-mobile" />
         </figure>
