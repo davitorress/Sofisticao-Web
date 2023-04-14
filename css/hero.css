@@ -1,4 +1,5 @@
 @import "./globalStyles.css";
+@import url("https://fonts.googleapis.com/css2?family=Faustina:wght@400;500;600;700&display=swap");
 
 header.mobile-hero {
 	width: 100%;
@@ -27,7 +28,7 @@ figure.icon img {
 }
 
 #hero {
-	height: 55vh;
+	height: 70vh;
 }
 
 .carousel,
@@ -49,10 +50,109 @@ figure.icon img {
 	flex: 0 0 100%;
 	width: 100%;
 	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.back-img.hero-brand {
+	gap: 14px;
+
+	text-align: center;
+	font-size: 2rem;
+	color: var(--white-color);
+	font-family: var(--estedad-vf);
 	background-image: url(/assets/img/hero-img.png);
+}
+
+.back-img.hero-brand figure {
+	width: fit-content;
+	max-width: 260px;
+}
+
+.back-img.hero-brand figure img {
+	width: 100%;
+	margin-bottom: 4px;
+}
+
+.back-img.hero-brand figure .lines {
+	display: flex;
+	gap: 6px;
+}
+
+.back-img.hero-brand figure .lines .line {
+	width: 100%;
+	height: 4px;
+	border-radius: 6px;
+	background-color: var(--white-color);
+}
+
+.back-img.hero-brand figure .lines .mini-line {
+	width: 10%;
+}
+
+.back-img.hero-mothers_day {
+	color: var(--white-color);
+
+	background: linear-gradient(
+			359.97deg,
+			#000000 11.22%,
+			rgba(22, 22, 22, 0.53867) 65.98%,
+			rgba(203, 203, 203, 0) 99.97%
+		),
+		url(/assets/img/mothers-day_mobile.png), #000000;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.back-img.hero-mothers_day .content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.back-img.hero-mothers_day .content,
+.back-img.hero-mothers_day button.mothers-day__action {
+	max-width: 250px;
+	text-align: center;
+}
+
+.back-img.hero-mothers_day .content .title {
+	font-weight: 600;
+	padding-bottom: 20px;
+	font-family: "Faustina", serif;
+	border-bottom: 3px solid var(--white-color);
+}
+
+.back-img.hero-mothers_day .content .title h1 {
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+
+.back-img.hero-mothers_day .content .title h2 {
+	font-size: 2.8rem;
+	text-transform: lowercase;
+}
+
+.back-img.hero-mothers_day .content p {
+	font-weight: 300;
+	font-size: 1.6rem;
+	font-family: var(--estedad-vf);
+}
+
+.back-img.hero-mothers_day .content button.mothers-day__action {
+	padding: 14px 0;
+	font-weight: 500;
+	font-size: 1.6rem;
+	font-family: var(--title-text);
+	background-color: #c52c2c;
 }
 
 .carousel-progress {
