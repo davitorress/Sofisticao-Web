@@ -33,8 +33,9 @@
 }
 
 .cat-carousel {
-	overflow: visible;
+	overflow: hidden;
 	position: relative;
+	padding: 12px 0;
 }
 
 .carousel-cards {

@@ -1,1 +1,41 @@
 @import "./globalStyles.css";
+
+#about {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	padding: 4vh 6vw;
+	color: var(--black-color);
+}
+
+#about h1 {
+	font-weight: 500;
+	font-size: 2.8rem;
+	font-family: var(--title-text);
+}
+
+#about p {
+	font-size: 1.8rem;
+	font-family: var(--subtitle-text);
+}
+
+#about button.about-action {
+	padding: 16px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	font-size: 1.8rem;
+	color: var(--white-color);
+	font-family: var(--highlight-text);
+	background-color: var(--black-color);
+}
+
+#about span.insta-logo {
+	width: 24px;
+	height: 24px;
+	font-size: 24px;
+	display: inline-block;
+	background-size: cover;
+	background-image: url(/assets/icon/instagram.svg);
+}
