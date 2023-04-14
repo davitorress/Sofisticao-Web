@@ -3,7 +3,6 @@ const carouselImages = document.querySelector(".carousel-images");
 
 for (let i = 1; i <= carouselImages.childElementCount; i++) {
 	let progressContainer = document.querySelector(".progress-bar-container").cloneNode(true);
-	console.log(progressContainer);
 	progressContainer.firstElementChild.id = "progress-bar-" + i;
 	progressContainer.style.display = "block";
 	document.querySelector(".carousel-progress").appendChild(progressContainer);
