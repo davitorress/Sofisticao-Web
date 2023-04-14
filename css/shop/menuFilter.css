@@ -1,6 +1,6 @@
 .menu-filter__content{
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     background: #FFFFFF;
     width: 315px;
