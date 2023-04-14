@@ -4,7 +4,7 @@ footer {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 60px;
-	padding: 16vh 12vw;
+	padding: 16vh 8vw;
 
 	font-size: 1.8rem;
 	color: var(--white-color);
