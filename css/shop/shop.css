@@ -28,7 +28,11 @@
   padding: 30px;
   gap: 8px;
   z-index: 99999;
+  /* left: 51vw;
+    position: absolute;
+    essas vao ser as propriedade do burger content quand clicado */
 }
+
 .burger-line {
   width: 35.5px;
   height: 3px;
