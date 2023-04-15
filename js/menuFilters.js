@@ -1,9 +1,14 @@
 // desmarca inputs
-const desmarcarRadio = (id) => {
-    var radio = document.getElementById(id); 
-    if (radio.checked) { 
-      radio.checked = false; 
-    }
+var menuBurguerFilter = document.getElementById('menu-burguer');
+
+const menuBurguer = () =>{
+
+  if( menuBurguerFilter.style.display === "flex"){
+    menuBurguerFilter.style.display = 'none';
   }
+  else{
+    menuBurguerFilter.style.display = 'flex';
+  }
+}
 
   

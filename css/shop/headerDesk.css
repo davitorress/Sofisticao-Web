@@ -1,0 +1,65 @@
+@import "../globalStyles.css";
+
+.group-nav-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+@media(max-width:768px){
+    .group-nav-1{
+    display: none;
+
+    }
+}
+.nav-content{
+    display: flex;
+}
+#nav-ul{
+    display: flex ;
+    flex-direction: row;
+    gap: 50px;
+}
+.li-nav{
+    font-family: var(--estedad-vf);
+font-weight: 500;
+font-size: 12px;
+letter-spacing: 0.16em;
+
+color: var(--black-color);
+}
+.login-icons__content{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+@media(max-width:768px){
+    .login-icons__content{
+        display: none;
+    }
+}
+.login-register{
+    box-sizing: border-box;
+width: 135px;
+height: 27px;
+border: 2px solid #1D1D1D;
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+/* text */
+font-family: var(--estedad-vf);
+font-weight: 500;
+font-size: 12px;
+
+letter-spacing: 0.16em;
+color: var(--black-color);
+}
+.header-icons{
+    display: flex;
+flex-direction: row;
+align-items: center;
+gap: 20px;
+}
+.hearsvg{
+    width: 25px;
+}
