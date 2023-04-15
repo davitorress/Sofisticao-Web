@@ -28,6 +28,19 @@ letter-spacing: 0.16em;
 
 color: var(--black-color);
 }
+.li-nav__shop{
+    font-family: var(--estedad-vf);
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration: underline solid #FFA826 3px;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    
+    color: var(--black-color);
+}
+.li-nav:hover{
+    font-weight: 800;
+}
 .login-icons__content{
     display: flex;
     gap: 25px;

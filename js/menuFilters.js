@@ -1,5 +1,7 @@
 // desmarca inputs
-var menuBurguerFilter = document.getElementById('menu-burguer');
+let menuBurguerFilter = document.getElementById('menu-burguer');
+let burguerClose = document.getElementById('burguer-close');
+
 
 const menuBurguer = () =>{
 
@@ -10,5 +12,9 @@ const menuBurguer = () =>{
     menuBurguerFilter.style.display = 'flex';
   }
 }
+burguerClose.addEventListener("click", function() {
+    menuBurguerFilter.classList.toggle("closeMenu");
+    console.log("teste");
+});
 
   
