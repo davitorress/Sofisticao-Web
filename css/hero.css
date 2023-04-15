@@ -29,6 +29,11 @@ figure.icon img {
 
 #hero {
 	height: 70vh;
+	position: relative;
+}
+
+#hero header.desktop-hero {
+	display: none;
 }
 
 .carousel,
@@ -177,4 +182,91 @@ figure.icon img {
 	width: 0%;
 	background-color: #ffa826;
 	transition: width 0.5s;
+}
+
+@media screen and (min-width: 1024px) {
+	header.mobile-hero {
+		display: none;
+	}
+
+	#hero {
+		height: 85vh;
+	}
+
+	#hero header.desktop-hero {
+		top: 0;
+		left: 0;
+		z-index: 10;
+		position: absolute;
+
+		width: 100%;
+		padding: 4vh 3vw;
+		display: grid;
+		grid-template-columns: max-content 1fr 33%;
+		align-items: center;
+		column-gap: 40px;
+
+		color: var(--white-color);
+	}
+
+	header.desktop-hero nav ul {
+		display: flex;
+		gap: 36px;
+		font-weight: 500;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		font-family: var(--estedad-vf);
+	}
+
+	header.desktop-hero nav ul li {
+		cursor: pointer;
+		height: fit-content;
+		transition: font-weight 0.3s ease-in-out;
+		display: flex;
+		flex-direction: column;
+	}
+	header.desktop-hero nav ul li::after {
+		content: "";
+		width: 0;
+		height: 4px;
+		display: block;
+		transition: all 0.3s ease-in-out;
+		background-color: var(--first-color);
+	}
+
+	header.desktop-hero nav ul li:hover,
+	header.desktop-hero nav ul li.active {
+		font-weight: 800;
+	}
+	header.desktop-hero nav ul li:hover::after,
+	header.desktop-hero nav ul li.active::after {
+		width: 100%;
+	}
+
+	header.desktop-hero .desktop-actions {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	header.desktop-hero .desktop-actions button.user-account {
+		padding: 6px 4px;
+		height: fit-content;
+		font-weight: 500;
+		font-size: 1.8rem;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: var(--estedad-vf);
+		border: 3px solid var(--white-color);
+	}
+
+	header.desktop-hero .desktop-actions .action-icons {
+		display: flex;
+		gap: 16px;
+	}
+
+	header.desktop-hero .desktop-actions .action-icons img {
+		width: 32px;
+		cursor: pointer;
+	}
 }
