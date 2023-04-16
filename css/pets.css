@@ -69,3 +69,25 @@
 	color: var(--white-color);
 	font-family: var(--highlight-text);
 }
+
+@media screen and (min-width: 1024px) {
+	#pets {
+		padding: 10vh 12vw;
+	}
+
+	#pets h1 {
+		font-size: 3.6rem;
+	}
+
+	.pets-categories {
+		grid-template-columns: 2fr 1fr 1fr;
+	}
+
+	.pets-categories .pet-category {
+		height: 500px;
+	}
+
+	.pet-category.dogs_cats {
+		grid-column: 1;
+	}
+}

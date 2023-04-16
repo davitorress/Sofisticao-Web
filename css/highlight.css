@@ -76,3 +76,42 @@ button.highlight-action {
 		max-block-size: 100%;
 	}
 }
+
+@media screen and (min-width: 1024px) {
+	#highlight {
+		gap: 32px;
+		margin: 120px 0 60px;
+		padding: 50px 80px 40px;
+	}
+
+	#highlight .highlight-content,
+	.highlight-tag,
+	button.highlight-action {
+		max-width: 700px;
+	}
+
+	#highlight .highlight-content {
+		gap: 36px;
+	}
+
+	.highlight-content h1 {
+		font-size: 8rem;
+	}
+
+	.highlight-content p,
+	.highlight-tag p {
+		width: 100%;
+		font-size: 2.2rem;
+	}
+
+	.highlight-tag img {
+		width: 32px;
+	}
+
+	#highlight > img {
+		top: -25%;
+		width: 360px;
+		aspect-ratio: 735 / 1322;
+		max-height: fit-content;
+	}
+}
