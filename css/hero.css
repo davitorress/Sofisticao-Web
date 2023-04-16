@@ -190,7 +190,7 @@ figure.icon img {
 	}
 
 	#hero {
-		height: 85vh;
+		height: 90vh;
 	}
 
 	#hero header.desktop-hero {
@@ -268,5 +268,50 @@ figure.icon img {
 	header.desktop-hero .desktop-actions .action-icons img {
 		width: 32px;
 		cursor: pointer;
+	}
+
+	#hero .carousel-progress {
+		padding: 5vh 12vw;
+		display: flex;
+		gap: 40px;
+
+		margin: 0 auto;
+	}
+
+	.back-img.hero-mothers_day {
+		align-items: flex-start;
+		padding-left: 12%;
+
+		background: linear-gradient(
+				359.97deg,
+				#000000 11.22%,
+				rgba(22, 22, 22, 0.53867) 65.98%,
+				rgba(203, 203, 203, 0) 99.97%
+			),
+			url(/assets/img/mothers-day.png), #000000;
+		background-position: top center;
+	}
+
+	.back-img.hero-mothers_day .content,
+	.back-img.hero-mothers_day button.mothers-day__action {
+		max-width: 450px;
+	}
+
+	.back-img.hero-mothers_day .content {
+		padding: 20px 40px;
+		background-color: var(--black-color);
+	}
+
+	.back-img.hero-mothers_day .content .title h1 {
+		font-size: 5.6rem;
+	}
+
+	.back-img.hero-mothers_day .content .title h2 {
+		font-size: 4rem;
+	}
+
+	.back-img.hero-mothers_day .content p,
+	.back-img.hero-mothers_day .content button.mothers-day__action {
+		font-size: 2.4rem;
 	}
 }

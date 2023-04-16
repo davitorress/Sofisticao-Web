@@ -53,8 +53,11 @@
 .product-item .price-item {
 	display: flex;
 	gap: 12px;
-	font-size: 2rem;
 	font-family: var(--title-text);
+}
+
+.product-item .price-item p {
+	font-size: 1.8rem;
 }
 
 .price-item .price-num {
@@ -86,6 +89,34 @@ button.product-action {
 
 @media screen and (min-width: 768px) {
 	.products-list {
-		grid-template-columns: repeat(4, auto);
+		grid-template-columns: repeat(3, auto);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#best-sellers h1 {
+		font-size: 3.6rem;
+	}
+
+	.products-list {
+		gap: 40px;
+	}
+
+	.products-list .product-item {
+		gap: 20px;
+		max-width: 350px;
+	}
+
+	.products-list .product-item p {
+		font-size: 2rem;
+	}
+
+	.products-list .product-item .price-item p,
+	button.product-action {
+		font-size: 2.6rem;
+	}
+
+	button.product-action {
+		padding: 8px 0;
 	}
 }

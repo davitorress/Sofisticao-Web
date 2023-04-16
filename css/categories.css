@@ -35,7 +35,7 @@
 .cat-carousel {
 	overflow: hidden;
 	position: relative;
-	padding: 12px 0;
+	padding: 12px 20px;
 }
 
 .carousel-cards {
@@ -66,7 +66,7 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: url(/assets/img/hero-img.png);
+	background-image: url(/assets/img/categories/toys.png);
 }
 
 .card h2 {
@@ -102,4 +102,36 @@
 .control-next {
 	right: -2vw;
 	right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+	#categories {
+		padding: 18vh 2vw;
+	}
+
+	#categories h1 {
+		font-size: 3.6rem;
+	}
+
+	.cat-carousel {
+		padding: 12px 10px;
+	}
+
+	.carousel-cards {
+		width: 40%;
+	}
+
+	.card .demo-img {
+		background-size: contain;
+	}
+
+	.card h2 {
+		gap: 10px;
+		font-size: 2rem;
+	}
+
+	.control-prev,
+	.control-next {
+		width: 48px;
+	}
 }
