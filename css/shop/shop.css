@@ -204,8 +204,16 @@ height: 93.75px;
 }
 .line-style {
   width: 348.02px;
+  width: 900px;
+  
   height: 1px;
   background-color: #cecece;
+}
+@media(max-width:768px){
+  .line-style{
+  width: 348.02px;
+
+  }
 }
 /* final linha estilo pos pagina */
 /* estilo produtos semelhantes */

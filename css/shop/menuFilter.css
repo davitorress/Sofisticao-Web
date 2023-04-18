@@ -11,16 +11,14 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding-left: 46px;
+  animation-name: showMenu;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
 
-  padding-top: 112px;
+  
+  padding-top: 112px; 
 }
-.closeMenu {
-  animation: closeMenu 0.5s ease-in-out;
-}
-.showMenu {
-  animation: showMenu 0.5s ease-in-out;
 
-}
 .burger-content__close {
   gap: 8px;
   display: flex;

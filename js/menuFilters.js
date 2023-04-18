@@ -1,20 +1,26 @@
 // desmarca inputs
 let menuBurguerFilter = document.getElementById('menu-burguer');
-let burguerClose = document.getElementById('burguer-close');
+let animacaoAtiva = "showMenu";
 
 
 const menuBurguer = () =>{
-
   if( menuBurguerFilter.style.display === "flex"){
-    menuBurguerFilter.style.display = 'none';
+    menuBurguerFilter.style.animationName = "closeMenu";
+    setTimeout(() => {
+      menuBurguerFilter.style.display = 'none';
+  
+    }, 450);
+          
   }
   else{
     menuBurguerFilter.style.display = 'flex';
+    menuBurguerFilter.style.animationName = "showMenu";         
+
   }
+
+ 
 }
-burguerClose.addEventListener("click", function() {
-    menuBurguerFilter.classList.toggle("closeMenu");
-    console.log("teste");
-});
+
+
 
   
