@@ -101,8 +101,18 @@ height: 93.75px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-
   color: var(--gray-color);
+}
+
+.product-seleer__content{
+  display: flex;
+  width: 100%;
+}
+.products-seler_filter{
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
 .products-seller {
@@ -111,7 +121,7 @@ height: 93.75px;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   row-gap: 50px;
-  padding: 0 5vw;
+  padding: 0 5vw 0 0;
 }
 
 @media (max-width: 768px) {

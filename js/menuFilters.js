@@ -3,7 +3,7 @@ let menuBurguerFilter = document.getElementById('menu-burguer');
 let animacaoAtiva = "showMenu";
 
 
-const menuBurguer = () =>{
+const menuFilter = () =>{
   if( menuBurguerFilter.style.display === "flex"){
     menuBurguerFilter.style.animationName = "closeMenu";
     setTimeout(() => {

@@ -13,7 +13,7 @@
   <body>
     <main class="container">
       <header class="header-container" id="navbar">
-        <div class="burger-content" onclick="menuBurguer()" id="open-burguer">
+        <div class="burger-content" id="open-burguer">
           <div class="burger-line"></div>
               <div class="burger-line"></div>                                               
            <div class="burger-line"></div>
@@ -50,7 +50,7 @@
       </header>
       <!-- Menu burguer mobile -->
       <menu class="menu-filter__content" id="menu-burguer">
-        <div class="burger-content__close" onclick="menuBurguer()" id="burguer-close">
+        <div class="burger-content__close" onclick="menuFilter()" id="burguer-close">
           <div class="burger-line__close"></div>
           <div class="burger-line__close"></div>
           <div class="burger-line__close"></div>
@@ -131,12 +131,74 @@
       </menu>
       <!-- Menu burguer mobile fim-->
       <section class="section-products__content">
+     
         <article class="search-filter">
           <p class="count-products">Roupas(78)</p>
-          <img src="../assets/icon/filter.svg" />
+          <img src="../assets/icon/filter.svg" onclick="menuFilter()"/>
         </article>
         <!-- Aqui são as fotos dos produtos e seus respectivos valores -->
-        <article class="products-seller">
+        <article class="product-seleer__content">
+          <article class="products-seler_filter">
+            <form class="cor-filter__content">
+              <p class="cor-filter__p">Cor</p>
+              <div class="cor-filter__inputs">
+                <input
+                  type="radio"
+                  name="Amarelo"
+                  id=""
+                  class="cor-filter__radios"
+                />
+                <input type="radio" name="Verde" id="" class="cor-filter__radios" />
+                <input type="radio" name="Azul" id="" class="cor-filter__radios" />
+              </div>
+              <div class="cor-filter__inputs">
+                <input
+                  type="radio"
+                  name="Vermelho"
+                  id=""
+                  class="cor-filter__radios2"
+                />
+                <input
+                  type="radio"
+                  name="Laranja"
+                  id=""
+                  class="cor-filter__radios2"
+                />
+                <input type="radio" name="Rosa" id="" class="cor-filter__radios2" />
+              </div>
+            </form>
+            <form class="menu-porte__content">
+              <p class="cor-filter__p">Porte</p>
+              <div class="menu-porte__inputs">
+                <input type="checkbox" class="checkbox-input" />
+                <label for="" class="label-inputs">Pequeno</label>
+              </div>
+              <div class="menu-porte__inputs">
+                <input type="checkbox" class="checkbox-input" />
+                <label for="" class="label-inputs">Medio</label>
+              </div>
+              <div class="menu-porte__inputs">
+                <input type="checkbox" class="checkbox-input" />
+                <label for="" class="label-inputs">Grande</label>
+              </div>
+            </form>
+            <form action="" class="menu-preco__content">
+              <p class="cor-filter__p">Preço</p>
+              <div class="menu-preco__values">
+                <div class="preco-value">R$50</div>
+                <div class="preco-value">R$250</div>
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                class="menu-preco__range"
+              />
+            </form>
+          </article>
+          <div class="products-seller">
+          
           <div class="sell-itens">
             <img
               src="../assets/img/roupas/dog-yellow-tshirt.svg"
@@ -293,6 +355,7 @@
               <p class="price-discount">R$78,99</p>
             </div>
           </div>
+        </div>
         </article>
         <!-- Aqui finalizo os produtos -->
 
