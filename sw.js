@@ -70,41 +70,11 @@ const filesToCache = [
   "assets/icon/truck.svg",
 ];
 
-let installButtonElement = document.createElement('button');
-installButtonElement.id = 'installButton';
-installButtonElement.innerText = 'Install';
-document.body.appendChild(installButtonElement);
 
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  showInstallButton();
-});
-
-function showInstallButton() {
-  const installButton = document.getElementById('installButton');
-  installButton.style.display = 'block';
-  installButton.addEventListener('click', installPWA);
-}
-
-function installPWA() {
-  deferredPrompt.prompt();
-  deferredPrompt.userChoice.then((choiceResult) => {
-    if (choiceResult.outcome === 'accepted') {
-      console.log('User accepted the install prompt.');
-      document.getElementById('installButton').style.display = 'none';
-    } else {
-      console.log('User dismissed the install prompt.');
-    }
-    deferredPrompt = null;
-  });
-}
 
 window.addEventListener('appinstalled', (evt) => {
   console.log('PWA was installed.');
-  document.getElementById('installButton').style.display = 'none';
+  document.getElementById('installButtonContainer').style.display = 'none';
 });
 
 self.addEventListener("install", (event) => {
@@ -189,3 +159,35 @@ self.addEventListener("fetch", (event) => {
     );
   }
 });
+
+let installButtonContainerElement = ' < div id = "installButtonContainer" > < button class="install__button" > Instalar </ button > </ div > '
+document.insertAdjacentHTML('afterend', installButtonContainerElement);
+
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  showinstallButtonContainer();
+});
+
+function showinstallButtonContainer() {
+  const installButtonContainer = document.getElementById('installButtonContainer');
+  console.log(installButtonContainer)
+  installButtonContainer.style.display = 'block';
+  installButtonContainer.addEventListener('click', installPWA);
+}
+
+function installPWA() {
+  deferredPrompt.prompt();
+  deferredPrompt.userChoice.then((choiceResult) => {
+    if (choiceResult.outcome === 'accepted') {
+      console.log('User accepted the install prompt.');
+      document.getElementById('installButtonContainer').style.display = 'none';
+    } else {
+      console.log('User dismissed the install prompt.');
+    }
+    deferredPrompt = null;
+  });
+}
