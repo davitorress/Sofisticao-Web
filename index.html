@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="./css/about.css" />
 		<link rel="stylesheet" href="./css/dispatch.css" />
 		<link rel="stylesheet" href="./css/footer.css" />
-
+		<link rel="manifest" href="./manifest.json">
 		<script src="./js/hero.js" defer></script>
 		<script src="./js/categories.js" defer></script>
 		<script src="./js/ratings.js" defer></script>
@@ -420,4 +420,12 @@
 			</section>
 		</footer>
 	</body>
+	<script>
+		// PWA - register service worker
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('./sw.js').then(function(reg) {
+				console.log('Service worker registered!', reg);
+			});
+		}
+	</script>
 </html>
