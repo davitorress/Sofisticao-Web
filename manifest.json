@@ -1,7 +1,7 @@
 {
     "theme_color": "#ffa826",
     "background_color": "#ffa826",
-    "display": "fullscreen",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "Sofisticão",
@@ -11,7 +11,6 @@
     "orientation": "portrait",
     "dir": "ltr",
     "display_override": [
-      "fullscreen",
       "standalone"
     ],
     "categories": [
