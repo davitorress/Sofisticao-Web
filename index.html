@@ -1,462 +1,531 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="./assets/img/orange-logo.svg" type="image/x-icon" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/orange-logo.svg"
+      type="image/x-icon"
+    />
 
-		<!-- Os links do css está na ordem de como está as section -->
-		<link rel="stylesheet" href="./css/hero.css" />
-		<link rel="stylesheet" href="./css/categories.css" />
-		<link rel="stylesheet" href="./css/bestSellers.css" />
-		<link rel="stylesheet" href="./css/highlight.css" />
-		<link rel="stylesheet" href="./css/pets.css" />
-		<link rel="stylesheet" href="./css/pwa.css" />
-		<link rel="stylesheet" href="./css/discount.css" />
-		<link rel="stylesheet" href="./css/rating.css" />
-		<link rel="stylesheet" href="./css/about.css" />
-		<link rel="stylesheet" href="./css/dispatch.css" />
-		<link rel="stylesheet" href="./css/footer.css" />
-		<link rel="manifest" href="./manifest.json">
-		<script src="./js/hero.js" defer></script>
-		<script src="./js/categories.js" defer></script>
-		<script src="./js/ratings.js" defer></script>
-		<title>Sofisticão</title>
-	</head>
-	<body style="overflow-x: hidden">
-		<div class="pwa__alert">
-			<img src="./assets/pwa-icons/ios/default-icon.png" alt="Logo Sofisticão" class="pwa__alert-img">
-			<p class="pwa__alert-text">Instale o Sofisticão para ter uma melhor experiência!</p>
-			<button class="pwa__alert-btn">Instalar</button>
-		</div>
-		<header class="mobile-hero">
-			<figure class="icon menu-icon">
-				<img src="./assets/icon/menu.svg" alt="menu icon" />
-			</figure>
+    <!-- Os links do css está na ordem de como está as section -->
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/categories.css" />
+    <link rel="stylesheet" href="./css/bestSellers.css" />
+    <link rel="stylesheet" href="./css/highlight.css" />
+    <link rel="stylesheet" href="./css/pets.css" />
+    <link rel="stylesheet" href="./css/pwa.css" />
+    <link rel="stylesheet" href="./css/discount.css" />
+    <link rel="stylesheet" href="./css/rating.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/dispatch.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="manifest" href="./manifest.json" />
+    <script src="./js/hero.js" defer></script>
+    <script src="./js/categories.js" defer></script>
+    <script src="./js/ratings.js" defer></script>
+    <title>Sofisticão</title>
+  </head>
+  <body style="overflow-x: hidden">
+    <div class="pwa__alert">
+      <img
+        src="./assets/pwa-icons/ios/default-icon.png"
+        alt="Logo Sofisticão"
+        class="pwa__alert-img"
+      />
+      <p class="pwa__alert-text">
+        Instale o Sofisticão para ter uma melhor experiência!
+      </p>
+      <button class="pwa__alert-btn">Instalar</button>
+    </div>
+    <header class="mobile-hero">
+      <figure class="icon menu-icon">
+        <img src="./assets/icon/menu.svg" alt="menu icon" />
+      </figure>
 
-			<figure class="named-logo">
-				<img src="./assets/img/sofisticao.png" alt="named logo" />
-			</figure>
+      <figure class="named-logo">
+        <img src="./assets/img/sofisticao.png" alt="named logo" />
+      </figure>
 
-			<div class="action-icons">
-				<figure class="icon search-icon">
-					<img src="./assets/icon/search.svg" alt="search icon" />
-				</figure>
-				<figure class="icon shopping-icon">
-					<img src="./assets/icon/shopping-bag.svg" alt="shopping icon" />
-				</figure>
-			</div>
-		</header>
+      <div class="action-icons">
+        <figure class="icon search-icon">
+          <img src="./assets/icon/search.svg" alt="search icon" />
+        </figure>
+        <figure class="icon shopping-icon">
+          <img src="./assets/icon/shopping-bag.svg" alt="shopping icon" />
+        </figure>
+      </div>
+    </header>
 
-		<main>
-			<section id="hero">
-				<header class="desktop-hero">
-					<figure class="desktop-logo">
-						<img src="./assets/img/white-logo.svg" alt="Sofisticão" />
-					</figure>
+    <main>
+      <section id="hero">
+        <header class="desktop-hero">
+          <figure class="desktop-logo">
+            <img src="./assets/img/white-logo.svg" alt="Sofisticão" />
+          </figure>
 
-					<nav>
-						<ul>
-							<li class="active">Home</li>
-							<li>Shop</li>
-							<li>Para Cães</li>
-							<li>Para Gatos</li>
-						</ul>
-					</nav>
+          <nav>
+            <ul>
+              <li class="active">Home</li>
+              <li>Shop</li>
+              <li>Para Cães</li>
+              <li>Para Gatos</li>
+            </ul>
+          </nav>
 
-					<section class="desktop-actions">
-						<button class="user-account">Login/Registro</button>
-						<div class="action-icons">
-							<img src="./assets/icon/search-white.svg" alt="search icon" />
-							<img src="./assets/icon/heart-white.svg" alt="favorites icon" />
-							<img src="./assets/icon/shopping-bag-white.svg" alt="shopping icon" />
-						</div>
-					</section>
-				</header>
+          <section class="desktop-actions">
+            <button class="user-account">Login/Registro</button>
+            <div class="action-icons">
+              <img src="./assets/icon/search-white.svg" alt="search icon" />
+              <img src="./assets/icon/heart-white.svg" alt="favorites icon" />
+              <img
+                src="./assets/icon/shopping-bag-white.svg"
+                alt="shopping icon"
+              />
+            </div>
+          </section>
+        </header>
 
-				<section class="carousel">
-					<section class="carousel-images">
-						<div class="back-img hero-brand">
-							<figure>
-								<img src="./assets/img/sofisticao-white.png" alt="Sofisticão" />
-								<div class="lines">
-									<div class="line mini-line"></div>
-									<div class="line"></div>
-									<div class="line mini-line"></div>
-								</div>
-							</figure>
-							<p class="hero-brand__text">Sofisticado da cabeça à pata</p>
-						</div>
-						<div class="back-img hero-mothers_day">
-							<div class="content">
-								<div class="title">
-									<h1>Mãe de Pet</h1>
-									<h2>merece todo amor!</h2>
-								</div>
-								<p>Para o dia das mães, compre uma roupa combinando e ainda ganhe um cupom de desconto.</p>
-								<button class="mothers-day__action">Conferir promoção</button>
-							</div>
-						</div>
-					</section>
+        <section class="carousel">
+          <section class="carousel-images">
+            <div class="back-img hero-brand">
+              <figure>
+                <img src="./assets/img/sofisticao-white.png" alt="Sofisticão" />
+                <div class="lines">
+                  <div class="line mini-line"></div>
+                  <div class="line"></div>
+                  <div class="line mini-line"></div>
+                </div>
+              </figure>
+              <p class="hero-brand__text">Sofisticado da cabeça à pata</p>
+            </div>
+            <div class="back-img hero-mothers_day">
+              <div class="content">
+                <div class="title">
+                  <h1>Mãe de Pet</h1>
+                  <h2>merece todo amor!</h2>
+                </div>
+                <p>
+                  Para o dia das mães, compre uma roupa combinando e ainda ganhe
+                  um cupom de desconto.
+                </p>
+                <button class="mothers-day__action">Conferir promoção</button>
+              </div>
+            </div>
+          </section>
 
-					<section class="carousel-progress">
-						<div class="progress-bar-container" style="display: none">
-							<div class="progress-bar"></div>
-						</div>
-					</section>
-				</section>
-			</section>
+          <section class="carousel-progress">
+            <div class="progress-bar-container" style="display: none">
+              <div class="progress-bar"></div>
+            </div>
+          </section>
+        </section>
+      </section>
 
-			<section id="categories">
-				<h1>Categorias</h1>
+      <section id="categories">
+        <h1>Categorias</h1>
 
-				<section class="cat-carousel">
-					<div class="carousel-cards">
-						<div class="card">
-							<figure class="demo-img"></figure>
-							<h2>Brinquedos</h2>
-						</div>
-						<div class="card">
-							<figure class="demo-img"></figure>
-							<h2>Roupas Anti-Odor</h2>
-						</div>
-						<div class="card">
-							<figure class="demo-img"></figure>
-							<h2>Casinha</h2>
-						</div>
-					</div>
-					<img class="control-prev" src="./assets/icon/chevron-left.svg" alt="control previous" />
-					<img class="control-next" src="./assets/icon/chevron-right.svg" alt="control next" />
-				</section>
-			</section>
+        <section class="cat-carousel">
+          <div class="carousel-cards">
+            <div class="card">
+              <figure class="demo-img"></figure>
+              <h2>Brinquedos</h2>
+            </div>
+            <div class="card">
+              <figure class="demo-img"></figure>
+              <h2>Roupas Anti-Odor</h2>
+            </div>
+            <div class="card">
+              <figure class="demo-img"></figure>
+              <h2>Casinha</h2>
+            </div>
+          </div>
+          <img
+            class="control-prev"
+            src="./assets/icon/chevron-left.svg"
+            alt="control previous"
+          />
+          <img
+            class="control-next"
+            src="./assets/icon/chevron-right.svg"
+            alt="control next"
+          />
+        </section>
+      </section>
 
-			<section id="best-sellers">
-				<h1>Best Sellers</h1>
+      <section id="best-sellers">
+        <h1>Best Sellers</h1>
 
-				<section class="products-list">
-					<article class="product-item">
-						<picture>
-							<source media="(min-width:1024px)" srcset="./assets/img/roupas/fries-tshirt.svg" />
-							<img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
-						</picture>
-						<div class="description-item">
-							<p>Roupinha - Sofi Wear</p>
-						</div>
-						<div class="price-item">
-							<p class="price-num">R$55,99</p>
-							<p class="price-discount">R$78,99</p>
-						</div>
-						<button class="product-action">Ver opções</button>
-					</article>
-					<article class="product-item">
-						<picture>
-							<source media="(min-width:1024px)" srcset="./assets/img/roupas/fries-tshirt.svg" />
-							<img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
-						</picture>
-						<div class="description-item">
-							<p>Roupinha - Sofi Wear</p>
-						</div>
-						<div class="price-item">
-							<p class="price-num">R$55,99</p>
-							<p class="price-discount">R$78,99</p>
-						</div>
-						<button class="product-action">Ver opções</button>
-					</article>
-					<article class="product-item">
-						<picture>
-							<source media="(min-width:1024px)" srcset="./assets/img/roupas/fries-tshirt.svg" />
-							<img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
-						</picture>
-						<div class="description-item">
-							<p>Roupinha - Sofi Wear</p>
-						</div>
-						<div class="price-item">
-							<p class="price-num">R$55,99</p>
-							<p class="price-discount">R$78,99</p>
-						</div>
-						<button class="product-action">Ver opções</button>
-					</article>
-					<article class="product-item">
-						<picture>
-							<source media="(min-width:1024px)" srcset="./assets/img/roupas/fries-tshirt.svg" />
-							<img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
-						</picture>
-						<div class="description-item">
-							<p>Roupinha - Sofi Wear</p>
-						</div>
-						<div class="price-item">
-							<p class="price-num">R$55,99</p>
-							<p class="price-discount">R$78,99</p>
-						</div>
-						<button class="product-action">Ver opções</button>
-					</article>
-					<article class="product-item">
-						<picture>
-							<source media="(min-width:1024px)" srcset="./assets/img/roupas/fries-tshirt.svg" />
-							<img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
-						</picture>
-						<div class="description-item">
-							<p>Roupinha - Sofi Wear</p>
-						</div>
-						<div class="price-item">
-							<p class="price-num">R$55,99</p>
-							<p class="price-discount">R$78,99</p>
-						</div>
-						<button class="product-action">Ver opções</button>
-					</article>
-					<article class="product-item">
-						<picture>
-							<source media="(min-width:1024px)" srcset="./assets/img/roupas/fries-tshirt.svg" />
-							<img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
-						</picture>
-						<div class="description-item">
-							<p>Roupinha - Sofi Wear</p>
-						</div>
-						<div class="price-item">
-							<p class="price-num">R$55,99</p>
-							<p class="price-discount">R$78,99</p>
-						</div>
-						<button class="product-action">Ver opções</button>
-					</article>
-				</section>
-			</section>
+        <section class="products-list">
+          <article class="product-item">
+            <picture>
+              <source
+                media="(min-width:1024px)"
+                srcset="./assets/img/roupas/fries-tshirt.svg"
+              />
+              <img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
+            </picture>
+            <div class="description-item">
+              <p>Roupinha - Sofi Wear</p>
+            </div>
+            <div class="price-item">
+              <p class="price-num">R$55,99</p>
+              <p class="price-discount">R$78,99</p>
+            </div>
+            <button class="product-action">Ver opções</button>
+          </article>
+          <article class="product-item">
+            <picture>
+              <source
+                media="(min-width:1024px)"
+                srcset="./assets/img/roupas/fries-tshirt.svg"
+              />
+              <img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
+            </picture>
+            <div class="description-item">
+              <p>Roupinha - Sofi Wear</p>
+            </div>
+            <div class="price-item">
+              <p class="price-num">R$55,99</p>
+              <p class="price-discount">R$78,99</p>
+            </div>
+            <button class="product-action">Ver opções</button>
+          </article>
+          <article class="product-item">
+            <picture>
+              <source
+                media="(min-width:1024px)"
+                srcset="./assets/img/roupas/fries-tshirt.svg"
+              />
+              <img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
+            </picture>
+            <div class="description-item">
+              <p>Roupinha - Sofi Wear</p>
+            </div>
+            <div class="price-item">
+              <p class="price-num">R$55,99</p>
+              <p class="price-discount">R$78,99</p>
+            </div>
+            <button class="product-action">Ver opções</button>
+          </article>
+          <article class="product-item">
+            <picture>
+              <source
+                media="(min-width:1024px)"
+                srcset="./assets/img/roupas/fries-tshirt.svg"
+              />
+              <img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
+            </picture>
+            <div class="description-item">
+              <p>Roupinha - Sofi Wear</p>
+            </div>
+            <div class="price-item">
+              <p class="price-num">R$55,99</p>
+              <p class="price-discount">R$78,99</p>
+            </div>
+            <button class="product-action">Ver opções</button>
+          </article>
+          <article class="product-item">
+            <picture>
+              <source
+                media="(min-width:1024px)"
+                srcset="./assets/img/roupas/fries-tshirt.svg"
+              />
+              <img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
+            </picture>
+            <div class="description-item">
+              <p>Roupinha - Sofi Wear</p>
+            </div>
+            <div class="price-item">
+              <p class="price-num">R$55,99</p>
+              <p class="price-discount">R$78,99</p>
+            </div>
+            <button class="product-action">Ver opções</button>
+          </article>
+          <article class="product-item">
+            <picture>
+              <source
+                media="(min-width:1024px)"
+                srcset="./assets/img/roupas/fries-tshirt.svg"
+              />
+              <img src="./assets/img/roupas/dog-yellow-tshirt.svg" />
+            </picture>
+            <div class="description-item">
+              <p>Roupinha - Sofi Wear</p>
+            </div>
+            <div class="price-item">
+              <p class="price-num">R$55,99</p>
+              <p class="price-discount">R$78,99</p>
+            </div>
+            <button class="product-action">Ver opções</button>
+          </article>
+        </section>
+      </section>
 
-			<section id="highlight">
-				<div class="highlight-content">
-					<h1>Sofi Wear</h1>
-					<p>Desenvolvemos uma linha de roupas especiais para o seu pet. Veja os modelos e especificações.</p>
-				</div>
-				<div class="highlight-tag">
-					<img src="./assets/icon/clothes.svg" alt="clothes icon" />
-					<p>Tecnologia anti-odor</p>
-				</div>
-				<button class="highlight-action">Ver produtos da linha</button>
-				<img src="./assets/img/highlight.png" alt="highlight dog" />
-			</section>
+      <section id="highlight">
+        <div class="highlight-content">
+          <h1>Sofi Wear</h1>
+          <p>
+            Desenvolvemos uma linha de roupas especiais para o seu pet. Veja os
+            modelos e especificações.
+          </p>
+        </div>
+        <div class="highlight-tag">
+          <img src="./assets/icon/clothes.svg" alt="clothes icon" />
+          <p>Tecnologia anti-odor</p>
+        </div>
+        <button class="highlight-action">Ver produtos da linha</button>
+        <img src="./assets/img/highlight.png" alt="highlight dog" />
+      </section>
 
-			<section id="pets">
-				<h1>Para todos os pets</h1>
+      <section id="pets">
+        <h1>Para todos os pets</h1>
 
-				<section class="pets-categories">
-					<div class="pet-category dogs_cats">
-						<h2>Cães e Gatos</h2>
-					</div>
-					<div class="pet-category birds">
-						<h2>Aves</h2>
-					</div>
-					<div class="pet-category rodents">
-						<h2>Roedores</h2>
-					</div>
-				</section>
-			</section>
+        <section class="pets-categories">
+          <div class="pet-category dogs_cats">
+            <h2>Cães e Gatos</h2>
+          </div>
+          <div class="pet-category birds">
+            <h2>Aves</h2>
+          </div>
+          <div class="pet-category rodents">
+            <h2>Roedores</h2>
+          </div>
+        </section>
+      </section>
 
-			<section id="discount">
-				<section class="discount-content">
-					<p class="title">30%</p>
-					<p class="text">de desconto nos brinquedos para felinos mais vendidos</p>
-				</section>
-				<button class="discount-action">Ver produtos</button>
-			</section>
+      <section id="discount">
+        <section class="discount-content">
+          <p class="title">30%</p>
+          <p class="text">
+            de desconto nos brinquedos para felinos mais vendidos
+          </p>
+        </section>
+        <button class="discount-action">Ver produtos</button>
+      </section>
 
-			<section id="ratings">
-				<h1>Avaliações</h1>
+      <section id="ratings">
+        <h1>Avaliações</h1>
 
-				<section class="ratings-carousel">
-					<section class="ratings-list">
-						<article class="rating-item">
-							<h2>New S's Shirt</h2>
-							<p class="rating-text">
-								Meu Shih Tzu não tem mais nó nos pelos ao usar uma roupinha. A tecnologia do tecido é excelente!
-							</p>
-							<div class="rating-author">
-								<p>Rebeca Baruch</p>
-								<div class="stars">
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star.svg" alt="Star outline" />
-								</div>
-							</div>
-						</article>
-						<article class="rating-item">
-							<h2>New S's Shirt</h2>
-							<p class="rating-text">
-								Meu Shih Tzu não tem mais nó nos pelos ao usar uma roupinha. A tecnologia do tecido é excelente!
-							</p>
-							<div class="rating-author">
-								<p>Rebeca Baruch</p>
-								<div class="stars">
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star.svg" alt="Star outline" />
-								</div>
-							</div>
-						</article>
-						<article class="rating-item">
-							<h2>New S's Shirt</h2>
-							<p class="rating-text">
-								Meu Shih Tzu não tem mais nó nos pelos ao usar uma roupinha. A tecnologia do tecido é excelente!
-							</p>
-							<div class="rating-author">
-								<p>Rebeca Baruch</p>
-								<div class="stars">
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star.svg" alt="Star outline" />
-								</div>
-							</div>
-						</article>
-						<article class="rating-item">
-							<h2>New S's Shirt</h2>
-							<p class="rating-text">
-								Meu Shih Tzu não tem mais nó nos pelos ao usar uma roupinha. A tecnologia do tecido é excelente!
-							</p>
-							<div class="rating-author">
-								<p>Rebeca Baruch</p>
-								<div class="stars">
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star-filled.svg" alt="Star filled" />
-									<img src="./assets/icon/star.svg" alt="Star outline" />
-								</div>
-							</div>
-						</article>
-					</section>
-				</section>
-				<img class="control-prev" src="./assets/icon/chevron-left.svg" alt="control previous" />
-				<img class="control-next" src="./assets/icon/chevron-right.svg" alt="control next" />
-			</section>
+        <section class="ratings-carousel">
+          <section class="ratings-list">
+            <article class="rating-item">
+              <h2>New S's Shirt</h2>
+              <p class="rating-text">
+                Meu Shih Tzu não tem mais nó nos pelos ao usar uma roupinha. A
+                tecnologia do tecido é excelente!
+              </p>
+              <div class="rating-author">
+                <p>Rebeca Baruch</p>
+                <div class="stars">
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star.svg" alt="Star outline" />
+                </div>
+              </div>
+            </article>
+            <article class="rating-item">
+              <h2>New S's Shirt</h2>
+              <p class="rating-text">
+                Meu Shih Tzu não tem mais nó nos pelos ao usar uma roupinha. A
+                tecnologia do tecido é excelente!
+              </p>
+              <div class="rating-author">
+                <p>Rebeca Baruch</p>
+                <div class="stars">
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star.svg" alt="Star outline" />
+                </div>
+              </div>
+            </article>
+            <article class="rating-item">
+              <h2>New S's Shirt</h2>
+              <p class="rating-text">
+                Meu Shih Tzu não tem mais nó nos pelos ao usar uma roupinha. A
+                tecnologia do tecido é excelente!
+              </p>
+              <div class="rating-author">
+                <p>Rebeca Baruch</p>
+                <div class="stars">
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star.svg" alt="Star outline" />
+                </div>
+              </div>
+            </article>
+            <article class="rating-item">
+              <h2>New S's Shirt</h2>
+              <p class="rating-text">
+                Meu Shih Tzu não tem mais nó nos pelos ao usar uma roupinha. A
+                tecnologia do tecido é excelente!
+              </p>
+              <div class="rating-author">
+                <p>Rebeca Baruch</p>
+                <div class="stars">
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star-filled.svg" alt="Star filled" />
+                  <img src="./assets/icon/star.svg" alt="Star outline" />
+                </div>
+              </div>
+            </article>
+          </section>
+        </section>
+        <img
+          class="control-prev"
+          src="./assets/icon/chevron-left.svg"
+          alt="control previous"
+        />
+        <img
+          class="control-next"
+          src="./assets/icon/chevron-right.svg"
+          alt="control next"
+        />
+      </section>
 
-			<section id="about">
-				<img src="./assets/img/about.png" alt="About us" />
-				<section class="about-content">
-					<h1>Sobre nós</h1>
-					<p>
-						Somos uma marca que preza pela individualidade do seu pet. Cuidamos do estilo e bem estar do seu amiguinho
-						num life style simples e leve. Siga-nos nas redes sociais e acompanhe as novidades.
-					</p>
-					<button class="about-action">Ir para o Instagram <span class="insta-logo"></span></button>
-				</section>
-			</section>
+      <section id="about">
+        <img src="./assets/img/about.png" alt="About us" />
+        <section class="about-content">
+          <h1>Sobre nós</h1>
+          <p>
+            Somos uma marca que preza pela individualidade do seu pet. Cuidamos
+            do estilo e bem estar do seu amiguinho num life style simples e
+            leve. Siga-nos nas redes sociais e acompanhe as novidades.
+          </p>
+          <button class="about-action">
+            Ir para o Instagram <span class="insta-logo"></span>
+          </button>
+        </section>
+      </section>
 
-			<section id="dispatch">
-				<div class="dispatch-item">
-					<img src="./assets/icon/truck.svg" alt="Truck icon" />
-					<div class="dispatch-content">
-						<h2>Entrega rápida</h2>
-						<p>Enviamos para todo o Brasil com rapidez e segurança</p>
-					</div>
-				</div>
-				<div class="dispatch-item">
-					<img src="./assets/icon/gift.svg" alt="Gift icon" />
-					<div class="dispatch-content">
-						<h2>Para presente</h2>
-						<p>Embalamos nossos produtos de forma especial para presente</p>
-					</div>
-				</div>
-				<div class="dispatch-item">
-					<img src="./assets/icon/shop-store.svg" alt="Shop icon" />
-					<div class="dispatch-content">
-						<h2>Loja segura</h2>
-						<p>Seus dados são usados com responsabilidade</p>
-					</div>
-				</div>
-			</section>
-		</main>
+      <section id="dispatch">
+        <div class="dispatch-item">
+          <img src="./assets/icon/truck.svg" alt="Truck icon" />
+          <div class="dispatch-content">
+            <h2>Entrega rápida</h2>
+            <p>Enviamos para todo o Brasil com rapidez e segurança</p>
+          </div>
+        </div>
+        <div class="dispatch-item">
+          <img src="./assets/icon/gift.svg" alt="Gift icon" />
+          <div class="dispatch-content">
+            <h2>Para presente</h2>
+            <p>Embalamos nossos produtos de forma especial para presente</p>
+          </div>
+        </div>
+        <div class="dispatch-item">
+          <img src="./assets/icon/shop-store.svg" alt="Shop icon" />
+          <div class="dispatch-content">
+            <h2>Loja segura</h2>
+            <p>Seus dados são usados com responsabilidade</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-		<footer>
-			<section class="brand">
-				<figure>
-					<img src="./assets/img/sofisticao-white.png" alt="Sofisticão" />
-					<div class="lines">
-						<div class="line mini-line"></div>
-						<div class="line"></div>
-						<div class="line mini-line"></div>
-					</div>
-				</figure>
-				<p class="brand-text">Sofisticão Inc., artigos e acessórios para animais</p>
-				<p class="brand-cnpj">CNPJ: 21.983.306/0001-85</p>
-			</section>
+    <footer>
+      <section class="brand">
+        <figure>
+          <img src="./assets/img/sofisticao-white.png" alt="Sofisticão" />
+          <div class="lines">
+            <div class="line mini-line"></div>
+            <div class="line"></div>
+            <div class="line mini-line"></div>
+          </div>
+        </figure>
+        <p class="brand-text">
+          Sofisticão Inc., artigos e acessórios para animais
+        </p>
+        <p class="brand-cnpj">CNPJ: 21.983.306/0001-85</p>
+      </section>
 
-			<dl class="contact">
-				<div class="contact-item">
-					<dt><img src="./assets/icon/map-pin.svg" alt="Map pin icon" /></dt>
-					<dd>São Paulo | Brasil</dd>
-				</div>
-				<div class="contact-item">
-					<dt><img src="./assets/icon/phone.svg" alt="Phone icon" /></dt>
-					<dd>+55 (11) 91234-5678</dd>
-				</div>
-				<div class="contact-item">
-					<dt><img src="./assets/icon/mail.svg" alt="Mail icon" /></dt>
-					<dd>sofisticao@sofi.com</dd>
-				</div>
-			</dl>
+      <dl class="contact">
+        <div class="contact-item">
+          <dt><img src="./assets/icon/map-pin.svg" alt="Map pin icon" /></dt>
+          <dd>São Paulo | Brasil</dd>
+        </div>
+        <div class="contact-item">
+          <dt><img src="./assets/icon/phone.svg" alt="Phone icon" /></dt>
+          <dd>+55 (11) 91234-5678</dd>
+        </div>
+        <div class="contact-item">
+          <dt><img src="./assets/icon/mail.svg" alt="Mail icon" /></dt>
+          <dd>sofisticao@sofi.com</dd>
+        </div>
+      </dl>
 
-			<section class="info-list">
-				<details class="info-item">
-					<summary>Pontos de venda <img src="./assets/icon/chevron-down.svg" alt="" /></summary>
-					<p>
-						Atualmente, fazemos a venda somente pelo site. Futuramente pretendemos adicionar pontos físicos para um
-						contato mais pessoal!
-					</p>
-				</details>
-				<details class="info-item">
-					<summary>Categorias <img src="./assets/icon/chevron-down.svg" alt="" /></summary>
-					<p>
-						Temos uma variedade de categorias disponíveis, fornecendo um leque vasto de produtos incríveis para o seu
-						pet!
-					</p>
-				</details>
-				<details class="info-item">
-					<summary>Redes sociais <img src="./assets/icon/chevron-down.svg" alt="" /></summary>
-					<p>
-						Você pode entrar em contato conosco pelas nossas redes sociais, ficaremos extremamente felizes em receber
-						uma mensagem sua!
-					</p>
-				</details>
-			</section>
-		</footer>
-	</body>
-	<script>
-let pwaAlert = document.querySelector('.pwa__alert');
-let installButton = pwaAlert.querySelector('.pwa__alert-btn');
+      <section class="info-list">
+        <details class="info-item">
+          <summary>
+            Pontos de venda <img src="./assets/icon/chevron-down.svg" alt="" />
+          </summary>
+          <p>
+            Atualmente, fazemos a venda somente pelo site. Futuramente
+            pretendemos adicionar pontos físicos para um contato mais pessoal!
+          </p>
+        </details>
+        <details class="info-item">
+          <summary>
+            Categorias <img src="./assets/icon/chevron-down.svg" alt="" />
+          </summary>
+          <p>
+            Temos uma variedade de categorias disponíveis, fornecendo um leque
+            vasto de produtos incríveis para o seu pet!
+          </p>
+        </details>
+        <details class="info-item">
+          <summary>
+            Redes sociais <img src="./assets/icon/chevron-down.svg" alt="" />
+          </summary>
+          <p>
+            Você pode entrar em contato conosco pelas nossas redes sociais,
+            ficaremos extremamente felizes em receber uma mensagem sua!
+          </p>
+        </details>
+      </section>
+    </footer>
+  </body>
+  <script>
+    let pwaAlert = document.querySelector(".pwa__alert");
+    let installButton = pwaAlert.querySelector(".pwa__alert-btn");
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').then(function(reg) {
-    console.log('Service worker registered!', reg);
-  })
-}
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js").then(function (reg) {
+        console.log("Service worker registered!", reg);
+      });
+    }
 
-let deferredPrompt;
+    let deferredPrompt;
 
-window.addEventListener('beforeinstallprompt', (event) => {
-  event.preventDefault();
-  deferredPrompt = event;
-  pwaAlert.classList.add('show');
-});
-
-installButton.addEventListener('click', () => {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the installation prompt');
-      } else {
-        console.log('User dismissed the installation prompt');
-      }
-      deferredPrompt = null;
-      pwaAlert.classList.remove('show');
+    window.addEventListener("beforeinstallprompt", (event) => {
+      event.preventDefault();
+      deferredPrompt = event;
+      pwaAlert.classList.add("show");
     });
-  }
-});
 
-	</script>
+    installButton.addEventListener("click", () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === "accepted") {
+            console.log("User accepted the installation prompt");
+          } else {
+            console.log("User dismissed the installation prompt");
+          }
+          deferredPrompt = null;
+          pwaAlert.classList.remove("show");
+        });
+      }
+    });
+  </script>
 </html>

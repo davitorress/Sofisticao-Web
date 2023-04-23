@@ -70,33 +70,21 @@ const filesToCache = [
   "assets/icon/truck.svg",
 ];
 
-
-self.addEventListener('beforeinstallprompt', (event) => {
-    event.preventDefault();
-    console.log('[ServiceWorker] Skipping installation prompt');
-  });
-
 self.addEventListener("install", (event) => {
-    console.log("[ServiceWorker] Install");
-    event.waitUntil(
-      caches.open(CACHE).then((cache) => {
-        console.log("[ServiceWorker] Caching app shell");
-        return Promise.all(
-          filesToCache.map((file) => {
-            return cache.add(file).catch((error) => {
-              console.log(`Failed to cache ${file}: ${error}`);
-            });
-          })
-        );
-      })
-    );
-    self.skipWaiting();
-    self.clients.matchAll().then((clients) => {
-      clients.forEach((client) => {
-        client.postMessage("New version installed. Please refresh.");
-      });
-    });
-  });
+  console.log("[ServiceWorker] Install");
+  event.waitUntil(
+    caches.open(CACHE).then((cache) => {
+      console.log("[ServiceWorker] Caching app shell");
+      return Promise.all(
+        filesToCache.map((file) => {
+          return cache.add(file).catch((error) => {
+            console.log(`Failed to cache ${file}: ${error}`);
+          });
+        })
+      );
+    })
+  );
+});
 
 self.addEventListener("activate", (event) => {
   console.log("[ServiceWorker] Activate");
@@ -123,10 +111,16 @@ self.addEventListener("fetch", (event) => {
   );
 });
 
+let deferredInstallPrompt = null;
+self.addEventListener("beforeinstallprompt", (event) => {
+  console.log("[ServiceWorker] beforeinstallprompt event");
+  event.preventDefault();
+  deferredInstallPrompt = event;
+});
+
 importScripts(
   "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"
 );
-
 
 if (workbox.navigationPreload.isSupported()) {
   workbox.navigationPreload.enable();
