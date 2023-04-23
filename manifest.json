@@ -2,7 +2,7 @@
     "theme_color": "#ffa826",
     "background_color": "#ffa826",
     "display": "standalone",
-    "scope": "/",
+    "scope": "https://www.sofisticao.shop",
     "start_url": "/",
     "name": "Sofisticão",
     "short_name": "Sofisticão",
