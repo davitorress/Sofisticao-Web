@@ -70,6 +70,12 @@ const filesToCache = [
   "assets/icon/truck.svg",
 ];
 
+
+self.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    console.log('[ServiceWorker] Skipping installation prompt');
+  });
+
 self.addEventListener("install", (event) => {
     console.log("[ServiceWorker] Install");
     event.waitUntil(

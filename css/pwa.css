@@ -64,3 +64,9 @@
         transition: all .3s ease-in-out;
     }
 }
+
+@media all and (display-mode: standalone) {
+    .pwa__alert{
+        display: none;
+    }
+}
