@@ -1,0 +1,27 @@
+.cor-filter__content-desktop {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .cor-filter__inputs-desktop {
+    display: flex;
+    gap: 37px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+ 
+  .menu-porte__content-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 4px;
+    padding-top: 24px;
+  }
+  
+  
+  

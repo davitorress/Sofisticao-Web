@@ -114,6 +114,11 @@ height: 93.75px;
   display: flex;
   align-items: center;
 }
+@media(max-width:768px){
+.products-seler_filter{
+  display: none;
+}
+}
 
 .products-seller {
   width: 100%;
@@ -122,6 +127,12 @@ height: 93.75px;
   gap: 20px;
   row-gap: 50px;
   padding: 0 5vw 0 0;
+}
+@media(max-width:768px){
+  .products-seller {
+    padding: 0 5vw;
+  }
+  
 }
 
 @media (max-width: 768px) {
@@ -262,7 +273,13 @@ height: 93.75px;
   height: 100%;
   padding-top: 39px;
   overflow-x: auto;
+  padding-left:300px;
 gap: 22px;
+}
+@media(max-width:768px) {
+.produtos-semelhantes__seller {
+padding-left: 20px;
+}
 }
 .produtos-semelhantes__seller::-webkit-scrollbar {
   width: 0;
