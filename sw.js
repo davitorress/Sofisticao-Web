@@ -80,20 +80,26 @@ const filesToCache = [
 ];
 
 self.addEventListener("install", (event) => {
-  console.log("[ServiceWorker] Install");
-  event.waitUntil(
-    caches.open(CACHE).then((cache) => {
-      console.log("[ServiceWorker] Caching app shell");
-      return cache.addAll(filesToCache);
-    })
-  );
-  self.skipWaiting();
-  self.clients.matchAll().then((clients) => {
-    clients.forEach((client) => {
-      client.postMessage("New version installed. Please refresh.");
+    console.log("[ServiceWorker] Install");
+    event.waitUntil(
+      caches.open(CACHE).then((cache) => {
+        console.log("[ServiceWorker] Caching app shell");
+        return Promise.all(
+          filesToCache.map((file) => {
+            return cache.add(file).catch((error) => {
+              console.log(`Failed to cache ${file}: ${error}`);
+            });
+          })
+        );
+      })
+    );
+    self.skipWaiting();
+    self.clients.matchAll().then((clients) => {
+      clients.forEach((client) => {
+        client.postMessage("New version installed. Please refresh.");
+      });
     });
   });
-});
 
 self.addEventListener("activate", (event) => {
   console.log("[ServiceWorker] Activate");
