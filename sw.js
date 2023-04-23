@@ -160,13 +160,14 @@ self.addEventListener("fetch", (event) => {
   }
 });
 
-let installButtonContainerElement = ' < div id = "installButtonContainer" > < button class="install__button" > Instalar </ button > </ div > '
-document.insertAdjacentHTML('afterend', installButtonContainerElement);
 
 
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
+    console.log('beforeinstallprompt Event fired')
+    let installButtonContainerElement = ' <div id="installButtonContainer" > < button class="install__button" > Instalar </ button > </ div > '
+    document.insertAdjacentHTML('afterend', installButtonContainerElement);
   e.preventDefault();
   deferredPrompt = e;
   showinstallButtonContainer();
