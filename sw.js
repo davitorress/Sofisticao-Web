@@ -72,10 +72,6 @@ const filesToCache = [
 
 
 
-window.addEventListener('appinstalled', (evt) => {
-  console.log('PWA was installed.');
-  document.getElementById('installButtonContainer').style.display = 'none';
-});
 
 self.addEventListener("install", (event) => {
     console.log("[ServiceWorker] Install");
@@ -164,7 +160,7 @@ self.addEventListener("fetch", (event) => {
 
 let deferredPrompt;
 
-window.addEventListener('beforeinstallprompt', (e) => {
+self.addEventListener('beforeinstallprompt', (e) => {
     console.log('beforeinstallprompt Event fired')
     let installButtonContainerElement = ' <div id="installButtonContainer" > < button class="install__button" > Instalar </ button > </ div > '
     document.insertAdjacentHTML('afterend', installButtonContainerElement);
@@ -172,6 +168,12 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
   showinstallButtonContainer();
 });
+
+self.addEventListener('appinstalled', (evt) => {
+    console.log('PWA was installed.');
+    document.getElementById('installButtonContainer').style.display = 'none';
+  });
+  
 
 function showinstallButtonContainer() {
   const installButtonContainer = document.getElementById('installButtonContainer');
