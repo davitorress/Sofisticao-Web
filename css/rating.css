@@ -6,6 +6,7 @@
 	align-items: center;
 	gap: 40px;
 	padding: 16vh 6vw;
+	position: relative;
 }
 
 #ratings h1 {
@@ -27,11 +28,20 @@
 	background-color: var(--first-color);
 }
 
+.ratings-carousel,
+.ratings-list {
+	width: 100%;
+}
+
+.ratings-carousel {
+	overflow: hidden;
+	position: relative;
+}
+
 #ratings .ratings-list {
 	display: flex;
 	justify-content: flex-start;
 	gap: 28px;
-	width: 100%;
 	margin-left: auto;
 	padding: 12px;
 
@@ -77,4 +87,44 @@
 .rating-author p {
 	font-weight: 300;
 	font-size: 1.6rem;
+}
+
+#ratings .control-prev,
+#ratings .control-next {
+	width: 48px;
+	top: 53%;
+	z-index: 10;
+	position: absolute;
+	cursor: pointer;
+	display: none;
+}
+
+#ratings .control-prev {
+	left: 0;
+}
+
+#ratings .control-next {
+	right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+	#ratings {
+		overflow: hidden;
+	}
+
+	#ratings .control-prev,
+	#ratings .control-next {
+		display: block;
+	}
+
+	#ratings .ratings-list {
+		max-width: 380px;
+		margin-left: 0;
+		overflow: visible;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.ratings-list .rating-item {
+		flex-basis: 100%;
+	}
 }

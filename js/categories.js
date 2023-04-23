@@ -1,9 +1,9 @@
 let currentCategory = 1;
 const categoryCarousel = document.querySelector(".cat-carousel .carousel-cards");
-const controlPrev = document.querySelector(".cat-carousel .control-prev");
-const controlNext = document.querySelector(".cat-carousel .control-next");
+const categoryPrev = document.querySelector(".cat-carousel .control-prev");
+const categoryNext = document.querySelector(".cat-carousel .control-next");
 
-controlPrev.addEventListener("click", () => {
+categoryPrev.addEventListener("click", () => {
 	currentCategory--;
 	if (currentCategory < 1) {
 		currentCategory = categoryCarousel.childElementCount;
@@ -16,7 +16,7 @@ controlPrev.addEventListener("click", () => {
 	}
 });
 
-controlNext.addEventListener("click", () => {
+categoryNext.addEventListener("click", () => {
 	currentCategory++;
 	if (currentCategory > categoryCarousel.childElementCount) {
 		currentCategory = 1;

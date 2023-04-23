@@ -8,6 +8,13 @@
 	color: var(--black-color);
 }
 
+#about .about-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+}
+
 #about h1 {
 	font-weight: 500;
 	font-size: 2.8rem;
@@ -38,4 +45,32 @@
 	display: inline-block;
 	background-size: cover;
 	background-image: url(/assets/icon/instagram.svg);
+}
+
+@media screen and (min-width: 1024px) {
+	#about {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#about .about-content {
+		padding: 20% 10%;
+	}
+
+	#about h1 {
+		font-size: 3.2rem;
+	}
+
+	#about p {
+		font-size: 2rem;
+	}
+
+	#about button.about-action {
+		font-size: 2.2rem;
+	}
+
+	#about span.insta-logo {
+		width: 28px;
+		height: 28px;
+		font-size: 28px;
+	}
 }

@@ -86,20 +86,20 @@
 	background-color: var(--first-color);
 }
 
-.control-prev,
-.control-next {
+#categories .control-prev,
+#categories .control-next {
 	width: 36px;
 	top: 35%;
 	position: absolute;
 	cursor: pointer;
 }
 
-.control-prev {
+#categories .control-prev {
 	left: -2vw;
 	left: 0;
 }
 
-.control-next {
+#categories .control-next {
 	right: -2vw;
 	right: 0;
 }
@@ -130,8 +130,14 @@
 		font-size: 2rem;
 	}
 
-	.control-prev,
-	.control-next {
+	#categories .control-prev,
+	#categories .control-next {
 		width: 48px;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.carousel-cards {
+		width: 30%;
 	}
 }

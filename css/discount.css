@@ -44,3 +44,32 @@ button.discount-action {
 	font-family: var(--title-text);
 	border: 2px solid var(--black-color);
 }
+
+@media screen and (min-width: 1024px) {
+	#discount {
+		gap: 24px;
+		padding: 6vh 4vw;
+		justify-content: center;
+		background-position: center right;
+		background-image: url(/assets/img/discount-lg.png);
+	}
+
+	#discount .discount-content,
+	button.discount-action {
+		max-width: 40%;
+	}
+
+	#discount .discount-content {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 4px;
+	}
+
+	.discount-content p.text {
+		font-size: 2rem;
+	}
+
+	button.discount-action {
+		font-size: 2.2rem;
+	}
+}

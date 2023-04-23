@@ -52,3 +52,27 @@
 	font-weight: 300;
 	font-family: var(--estedad-vf);
 }
+
+@media screen and (min-width: 1024px) {
+	#dispatch {
+		padding: 16vh 4vw;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	#dispatch .dispatch-item {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	#dispatch .dispatch-item:nth-child(2) {
+		border-top: 0;
+		border-bottom: 0;
+		border-left: 2px solid #d2d2d2;
+		border-right: 2px solid #d2d2d2;
+	}
+
+	.dispatch-item .dispatch-content {
+		font-size: 2rem;
+	}
+}
