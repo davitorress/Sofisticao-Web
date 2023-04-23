@@ -20,7 +20,7 @@
     ],
     "icons": [
       {
-        "src": "assets/pwa-icons/windows11/SmallTile.scale-100.png",
+        "src": "assets/pwa-icons/windows11/touch-icon.png",
         "sizes": "71x71",
         "purpose": "any"
       },
@@ -369,7 +369,7 @@
         "sizes": "48x48"
       },
       {
-        "src": "assets/pwa-icons/ios/16.png",
+        "src": "assets/pwa-icons/ios/touch-icon.png",
         "sizes": "16x16"
       },
       {
