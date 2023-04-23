@@ -9,6 +9,7 @@
     "description": "O melhor lugar para o seu pet!",
     "lang": "pt",
     "orientation": "portrait",
+    "dir": "ltr",
     "display_override": [
       "fullscreen",
       "standalone"
@@ -19,6 +20,11 @@
       "personalization"
     ],
     "icons": [
+        {
+            "src": "assets/pwa-icons/windows11/SmallTile.scale-100.png",
+            "sizes": "71x71",
+            "purpose": "any"
+          },
         {
           "src": "assets/pwa-icons/windows11/SmallTile.scale-100.png",
           "sizes": "71x71"
