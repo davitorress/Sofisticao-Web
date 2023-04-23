@@ -1,5 +1,5 @@
 // cache name
-const CACHE = "pwa-sofisticao";
+const CACHE = "pwa-sofisticao-v-2";
 
 // files to cache
 const filesToCache = [
@@ -69,9 +69,6 @@ const filesToCache = [
   "assets/icon/star.svg",
   "assets/icon/truck.svg",
 ];
-
-
-
 
 self.addEventListener("install", (event) => {
     console.log("[ServiceWorker] Install");
@@ -155,42 +152,3 @@ self.addEventListener("fetch", (event) => {
     );
   }
 });
-
-
-
-let deferredPrompt;
-
-self.addEventListener('beforeinstallprompt', (e) => {
-    console.log('beforeinstallprompt Event fired')
-    let installButtonContainerElement = ' <div id="installButtonContainer" > < button class="install__button" > Instalar </ button > </ div > '
-    document.insertAdjacentHTML('afterend', installButtonContainerElement);
-  e.preventDefault();
-  deferredPrompt = e;
-  showinstallButtonContainer();
-});
-
-self.addEventListener('appinstalled', (evt) => {
-    console.log('PWA was installed.');
-    document.getElementById('installButtonContainer').style.display = 'none';
-  });
-  
-
-function showinstallButtonContainer() {
-  const installButtonContainer = document.getElementById('installButtonContainer');
-  console.log(installButtonContainer)
-  installButtonContainer.style.display = 'block';
-  installButtonContainer.addEventListener('click', installPWA);
-}
-
-function installPWA() {
-  deferredPrompt.prompt();
-  deferredPrompt.userChoice.then((choiceResult) => {
-    if (choiceResult.outcome === 'accepted') {
-      console.log('User accepted the install prompt.');
-      document.getElementById('installButtonContainer').style.display = 'none';
-    } else {
-      console.log('User dismissed the install prompt.');
-    }
-    deferredPrompt = null;
-  });
-}
