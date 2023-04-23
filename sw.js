@@ -123,6 +123,32 @@ return response || fetch(event.request);
 );
 });
 
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  event.preventDefault();
+  // Stash the event so it can be triggered later
+  deferredPrompt = event;
+  // Show a custom install button or trigger the install prompt
+  const installButton = document.getElementById('install-button');
+  installButton.style.display = 'block';
+  installButton.addEventListener('click', () => {
+    // Show the install prompt
+    deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the install prompt');
+      } else {
+        console.log('User dismissed the install prompt');
+      }
+      // Clear the deferredPrompt variable
+      deferredPrompt = null;
+    });
+  });
+});
+
 // This is the "Offline page" service worker
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
