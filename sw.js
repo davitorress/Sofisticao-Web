@@ -1,5 +1,5 @@
 // cache name
-const filesToCache = "pwa-sofisticao-v4";
+const CACHENAME = "pwa-sofisticao-v4";
 
 importScripts(
   "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"
@@ -15,15 +15,15 @@ const filesToCache = [
 self.addEventListener("install", (event) => {
   console.log("[ServiceWorker] Install");
   event.waitUntil(
-    caches.open(filesToCache).then((cache) => {
+    caches.open(CACHENAME).then((cache) => {
       console.log("[ServiceWorker] Caching app shell");
-      return Promise.all(
-        filesToCache.map((file) => {
-          return cache.add(file).catch((error) => {
-            console.log(`Failed to cache ${file}: ${error}`);
-          });
-        })
-      );
+      // Cache app shell files and offline fallback page
+      return Promise.all([
+        cache.addAll(filesToCache),
+        cache.add("offline.html"),
+      ]).catch((error) => {
+        console.log(`Failed to cache: ${error}`);
+      });
     })
   );
 });
@@ -34,7 +34,7 @@ self.addEventListener("activate", (event) => {
     caches.keys().then((keyList) => {
       return Promise.all(
         keyList.map((key) => {
-          if (key !== filesToCache) {
+          if (key !== CACHENAME) {
             console.log("[ServiceWorker] Removing old cache", key);
             return caches.delete(key);
           }
@@ -57,7 +57,7 @@ self.addEventListener('fetch', (event) => {
         return networkResp;
       } catch (error) {
 
-        const cache = await caches.open(filesToCache);
+        const cache = await caches.open(CACHENAME);
         const cachedResp = await cache.match(offlineFallbackPage);
         return cachedResp;
       }
@@ -72,7 +72,6 @@ self.addEventListener("beforeinstallprompt", (event) => {
   deferredInstallPrompt = event;
 });
 
-
 const offlineFallbackPage = "offline.html";
 
 self.addEventListener("message", (event) => {
@@ -81,21 +80,9 @@ self.addEventListener("message", (event) => {
   }
 });
 
-self.addEventListener('install', async (event) => {
-  event.waitUntil(
-    caches.open(filesToCache)
-      .then((cache) => cache.add(offlineFallbackPage))
-  );
-});
-
-if (workbox.navigationPreload.isSupported()) {
-  workbox.navigationPreload.enable();
-}
-
 workbox.routing.registerRoute(
   new RegExp('/*'),
   new workbox.strategies.StaleWhileRevalidate({
-    cacheName: filesToCache
+    cacheName: CACHENAME
   })
 );
-
