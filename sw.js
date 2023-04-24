@@ -1,5 +1,5 @@
 // cache name
-const CACHE = "pwa-sofisticao-v4";
+const filesToCache = "pwa-sofisticao-v4";
 
 importScripts(
   "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"
@@ -15,7 +15,7 @@ const filesToCache = [
 self.addEventListener("install", (event) => {
   console.log("[ServiceWorker] Install");
   event.waitUntil(
-    caches.open(CACHE).then((cache) => {
+    caches.open(filesToCache).then((cache) => {
       console.log("[ServiceWorker] Caching app shell");
       return Promise.all(
         filesToCache.map((file) => {
@@ -34,7 +34,7 @@ self.addEventListener("activate", (event) => {
     caches.keys().then((keyList) => {
       return Promise.all(
         keyList.map((key) => {
-          if (key !== CACHE) {
+          if (key !== filesToCache) {
             console.log("[ServiceWorker] Removing old cache", key);
             return caches.delete(key);
           }
@@ -57,7 +57,7 @@ self.addEventListener('fetch', (event) => {
         return networkResp;
       } catch (error) {
 
-        const cache = await caches.open(CACHE);
+        const cache = await caches.open(filesToCache);
         const cachedResp = await cache.match(offlineFallbackPage);
         return cachedResp;
       }
@@ -83,7 +83,7 @@ self.addEventListener("message", (event) => {
 
 self.addEventListener('install', async (event) => {
   event.waitUntil(
-    caches.open(CACHE)
+    caches.open(filesToCache)
       .then((cache) => cache.add(offlineFallbackPage))
   );
 });
@@ -95,7 +95,7 @@ if (workbox.navigationPreload.isSupported()) {
 workbox.routing.registerRoute(
   new RegExp('/*'),
   new workbox.strategies.StaleWhileRevalidate({
-    cacheName: CACHE
+    cacheName: filesToCache
   })
 );
 
