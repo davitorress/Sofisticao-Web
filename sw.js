@@ -1,5 +1,5 @@
 // cache name
-const CACHE = "pwa-sofisticao-v2";
+const CACHE = "pwa-sofisticao-v3";
 
 // files to cache
 const filesToCache = [
@@ -126,7 +126,7 @@ if (workbox.navigationPreload.isSupported()) {
   workbox.navigationPreload.enable();
 }
 
-const offlineFallbackPage = "offline.html";
+const offlineFallbackPage = "index.html";
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
