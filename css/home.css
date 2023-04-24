@@ -1,0 +1,11 @@
+@import "./globalStyles.css";
+@import "./home/hero.css";
+@import "./home/categories.css";
+@import "./home/bestSellers.css";
+@import "./home/highlight.css";
+@import "./home/pets.css";
+@import "./home/discount.css";
+@import "./home/rating.css";
+@import "./home/about.css";
+@import "./home/dispatch.css";
+@import "./home/footer.css";
