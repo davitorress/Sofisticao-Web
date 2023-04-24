@@ -1,5 +1,3 @@
-@import "./globalStyles.css";
-
 #pets {
 	display: flex;
 	flex-direction: column;

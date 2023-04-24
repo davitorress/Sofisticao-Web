@@ -1,5 +1,3 @@
-@import "./globalStyles.css";
-
 #dispatch {
 	display: grid;
 	grid-template-columns: 1fr;

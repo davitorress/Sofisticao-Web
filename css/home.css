@@ -9,3 +9,7 @@
 @import "./home/about.css";
 @import "./home/dispatch.css";
 @import "./home/footer.css";
+
+.skeleton-item {
+	display: none !important;
+}
