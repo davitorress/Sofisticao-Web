@@ -1,0 +1,12 @@
+.mobile-text{
+ display: none;   
+}
+@media(max-width:768px){
+    .mobile-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .desktop-text{
+    display: none;
+    }
+}

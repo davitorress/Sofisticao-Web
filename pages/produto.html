@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="../css/shop/shop.css" />
 		<link rel="stylesheet" href="../css/shop/headerDesk.css" />
 		<link rel="stylesheet" href="../css/shop/products/products.css" />
+		<link rel="stylesheet" href="../css/home/dispatch.css" />
+        <link rel="stylesheet" href="../css/shop/products/mobile.css">
 
 		<title>Produtos</title>
 	</head>
@@ -53,34 +55,44 @@
 			<!-- Header desk and Mobile fim -->
 
 			<section class="section-produtos__container">
-				<div>
+				<div class="mobile-text">
 					<h2 class="produtos-description">Roupinha - Sofi Wear</h2>
 					<div class="price-itens">
 						<p class="price-num">R$55,99</p>
 						<p class="price-discount">R$78,99</p>
 					</div>
 				</div>
-				<figure class="figure-produtos__content">
-					<img src="../assets/img/roupas/dog-yellow-tshirt.svg" alt="" />
-					<div class="imgs-produtos">
-						<img
-							src="../assets/img/roupas/dog-yellow-tshirt.svg"
-							alt=""
-							class="dogs-wear"
-						/>
-						<img
-							src="../assets/img/roupas/dog-yellow-tshirt.svg"
-							alt=""
-							class="dogs-wear"
-						/>
-						<img
-							src="../assets/img/roupas/dog-yellow-tshirt.svg"
-							alt=""
-							class="dogs-wear"
-						/>
-					</div>
+				<article class="figure-produtos__content">
+                    <figure class="img-figures__content">
+
+                        <img src="../assets/img/roupas/dog-yellow-tshirt.svg" alt="" class="img-produto__main"/>
+                        <div class="imgs-produtos">
+                            <img
+                                src="../assets/img/roupas/dog-yellow-tshirt.svg"
+                                alt=""
+                                class="dogs-wear"
+                            />
+                            <img
+                                src="../assets/img/roupas/dog-yellow-tshirt.svg"
+                                alt=""
+                                class="dogs-wear"
+                            />
+                            <img
+                                src="../assets/img/roupas/dog-yellow-tshirt.svg"
+                                alt=""
+                                class="dogs-wear"
+                            />
+                        </div>
+                    </figure>
 					<article class="buy-produtos__content">
 						<form class="form-options__container">
+                            <div class="desktop-text">
+                                <h2 class="produtos-description">Roupinha - Sofi Wear</h2>
+                                <div class="price-itens">
+                                    <p class="price-num">R$55,99</p>
+                                    <p class="price-discount">R$78,99</p>
+                                </div>
+                            </div>
 							<div class="container-options-size">
 								<div class="options-produtos">
 									<p>Opções</p>
@@ -133,7 +145,36 @@
 							</p>
 						</div>
 					</article>
-				</figure>
+				</article>
+                <section>
+
+                    <article id="dispatch">
+                        <div class="dispatch-item">
+                            <img src="../assets/icon/truck.svg" alt="Truck icon" />
+                            <div class="dispatch-content">
+                                <h2>Entrega rápida</h2>
+                                <p>Enviamos para todo o Brasil com rapidez e segurança</p>
+                            </div>
+                        </div>
+                        <div class="dispatch-item">
+                            <img src="../assets/icon/gift.svg" alt="Gift icon" />
+                            <div class="dispatch-content">
+                                <h2>Para presente</h2>
+                                <p>Embalamos nossos produtos de forma especial para presente</p>
+                            </div>
+                        </div>
+                        <div class="dispatch-item">
+                            <img src="../assets/icon/shop-store.svg" alt="Shop icon" />
+                            <div class="dispatch-content">
+                                <h2>Loja segura</h2>
+                                <p>Seus dados são usados com responsabilidade</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rating-products">
+
+                    </article>
+                </section>
 			</section>
 		</main>
 	</body>
