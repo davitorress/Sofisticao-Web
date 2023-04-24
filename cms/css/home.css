@@ -1,0 +1,27 @@
+.sidebar {
+	width: 200px;
+	background-color: #0f85d4;
+}
+
+.sidebar nav ul {
+	list-style: none;
+}
+
+.sidebar nav ul li {
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.sidebar nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.sidebar nav hr {
+	border-top: 3px solid;
+}
+
+table img {
+	height: 80px;
+}

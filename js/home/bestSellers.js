@@ -1,9 +1,5 @@
 const allProducts = await fetch("http://localhost:8000/product", {
 	mode: "cors",
-	headers: {
-		"Access-Control-Allow-Origin": "*",
-		"Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
-	},
 })
 	.then((res) => res.json())
 	.then((data) => [...data[0]]);

@@ -6,10 +6,45 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="/assets/img/orange-logo.svg" type="image/x-icon" />
 
+		<link rel="stylesheet" href="./css/home.css" />
 		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+
+		<script src="./js/get.js" type="module" defer></script>
 		<script src="./bootstrap/js/bootstrap.bundle.min.js" defer></script>
 
 		<title>Sofisticão - CMS</title>
 	</head>
-	<body></body>
+	<body class="min-vh-100 bg-body-secondary d-flex">
+		<section class="sidebar min-vh-100 d-flex flex-column gap-5 p-3 text-white">
+			<img class="w-full" src="/assets/img/sofisticao-white.png" alt="Sofisticão" />
+			<nav>
+				<h2 class="h2">Produtos</h2>
+				<ul class="p-0">
+					<li class="py-2">Consultar</li>
+					<hr />
+					<li class="py-2"><a href="./cadastrar.html">Cadastrar</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		<section class="min-vh-100 w-100 d-flex flex-column align-items-center justify-content-center p-lg-3">
+			<table class="table table-bordered table-striped table-hover rounded bg-white">
+				<thead>
+					<tr>
+						<th>Imagem</th>
+						<th>Nome</th>
+						<th>Preço</th>
+						<th>Preço com desconto</th>
+						<th>Cores</th>
+						<th>Porte</th>
+						<th>Quantidade</th>
+						<th>Categoria</th>
+						<th colspan="2">Ação</th>
+					</tr>
+				</thead>
+
+				<tbody></tbody>
+			</table>
+		</section>
+	</body>
 </html>
