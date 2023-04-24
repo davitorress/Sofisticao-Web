@@ -5,7 +5,6 @@ const allProducts = await fetch("http://localhost:8000/product", {
 	.then((data) => [...data[0]]);
 
 const sortedProducts = allProducts.sort((a, b) => +b.quantidade - +a.quantidade);
-console.log(sortedProducts);
 
 const bestSellers = document.querySelector("#best-sellers .products-list");
 
@@ -18,10 +17,12 @@ for (let i = 0; i < 6; i++) {
 	cloneItem.querySelector(".price-num").innerText = `R$${sortedProducts[i].preco}`;
 	cloneItem.querySelector(".price-discount").innerText = `R$${sortedProducts[i].preco_desc}`;
 	cloneItem.querySelector("button").onclick = () => {
-		const href = window.location.href;
-		window.location.href = href + "pages/produto.html?id=" + i;
+		window.location.href = "produto.html?id=" + sortedProducts[i]._id.$oid;
+	};
+	cloneItem.querySelector("img").onclick = () => {
+		window.location.href = "produto.html?id=" + sortedProducts[i]._id.$oid;
 	};
 
 	cloneItem.classList.remove("skeleton-item");
 	bestSellers.appendChild(cloneItem);
-}	
+}
