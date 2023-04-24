@@ -3,6 +3,7 @@ const allProducts = await fetch("http://localhost:8000/product", {
 })
 	.then((res) => res.json())
 	.then((data) => [...data[0]]);
+
 const sortedProducts = allProducts.sort((a, b) => +b.quantidade - +a.quantidade);
 console.log(sortedProducts);
 
@@ -23,4 +24,4 @@ for (let i = 0; i < 6; i++) {
 
 	cloneItem.classList.remove("skeleton-item");
 	bestSellers.appendChild(cloneItem);
-}
+}	

@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/globalStyles.css" />
-    <link rel="stylesheet" href="../css/shop/shop.css" />
-    <link rel="stylesheet" href="../css/shop/menuFilter.css" />
-    <link rel="stylesheet" href="../css/shop/headerDesk.css" />
-    <link rel="stylesheet" href="../css/shop/filterDesktop.css" />
-    
-		<script src="../sw-init.js"></script>
+    <link rel="stylesheet" href="./css/globalStyles.css" />
+    <link rel="stylesheet" href="./css/shop/shop.css" />
+    <link rel="stylesheet" href="./css/shop/menuFilter.css" />
+    <link rel="stylesheet" href="./css/shop/headerDesk.css" />
+    <link rel="stylesheet" href="./css/shop/filterDesktop.css" />
+
+    <script src="./sw-init.js"></script>
     <title>Shop</title>
   </head>
   <body>
@@ -18,20 +18,20 @@
       <header class="header-container" id="navbar">
         <div class="burger-content" id="open-burguer">
           <div class="burger-line"></div>
-              <div class="burger-line"></div>                                               
-           <div class="burger-line"></div>
-        </div>      
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </div>
 
-          <img src="../assets/img/mobile-logo.svg" alt="" class="logo-mobile" />
+        <img src="./assets/img/mobile-logo.svg" alt="" class="logo-mobile" />
         <div class="group-nav-1">
           <img
-            src="../assets/img/desktop-logo.svg"
+            src="./assets/img/desktop-logo.svg"
             alt=""
             class="logo-desktop"
           />
           <nav class="nav-content">
             <ul id="nav-ul">
-              <li><a class="li-nav"> HOME</a></li>
+              <li><a class="li-nav" href="index.html">HOME</a></li>
               <li><a class="li-nav__shop">SHOP</a></li>
               <li><a class="li-nav">PARA CÃES</a></li>
               <li><a class="li-nav">PARA GATOS</a></li>
@@ -41,19 +41,23 @@
         <div class="login-icons__content">
           <div class="login-register">LOGIN/REGISTRO</div>
           <div class="header-icons">
-            <img src="../assets/img/icons/search.svg" alt="" />
-            <img src="../assets/icon/heart.svg" alt=""  class="hearsvg"/>
-          <img src="../assets/img/icons/shopping-bag.svg" alt="" />
+            <img src="./assets/img/icons/search.svg" alt="" />
+            <img src="./assets/icon/heart.svg" alt="" class="hearsvg" />
+            <img src="./assets/img/icons/shopping-bag.svg" alt="" />
           </div>
         </div>
         <div class="search-buy">
-          <img src="../assets/img/icons/search.svg" alt="" />
-          <img src="../assets/img/icons/shopping-bag.svg" alt="" />
+          <img src="./assets/img/icons/search.svg" alt="" />
+          <img src="./assets/img/icons/shopping-bag.svg" alt="" />
         </div>
       </header>
       <!-- Menu burguer mobile -->
       <menu class="menu-filter__content" id="menu-burguer">
-        <div class="burger-content__close" onclick="menuFilter()" id="burguer-close">
+        <div
+          class="burger-content__close"
+          onclick="menuFilter()"
+          id="burguer-close"
+        >
           <div class="burger-line__close"></div>
           <div class="burger-line__close"></div>
           <div class="burger-line__close"></div>
@@ -134,10 +138,9 @@
       </menu>
       <!-- Menu burguer mobile fim-->
       <section class="section-products__content">
-     
         <article class="search-filter">
           <p class="count-products">Roupas(78)</p>
-          <img src="../assets/icon/filter.svg" onclick="menuFilter()"/>
+          <img src="./assets/icon/filter.svg" onclick="menuFilter()" />
         </article>
         <!-- Aqui são as fotos dos produtos e seus respectivos valores -->
         <article class="product-seleer__content">
@@ -151,8 +154,18 @@
                   id=""
                   class="cor-filter__radios"
                 />
-                <input type="radio" name="Verde" id="" class="cor-filter__radios" />
-                <input type="radio" name="Azul" id="" class="cor-filter__radios" />
+                <input
+                  type="radio"
+                  name="Verde"
+                  id=""
+                  class="cor-filter__radios"
+                />
+                <input
+                  type="radio"
+                  name="Azul"
+                  id=""
+                  class="cor-filter__radios"
+                />
               </div>
               <div class="cor-filter__inputs-desktop">
                 <input
@@ -167,13 +180,17 @@
                   id=""
                   class="cor-filter__radios2"
                 />
-                <input type="radio" name="Rosa" id="" class="cor-filter__radios2" />
+                <input
+                  type="radio"
+                  name="Rosa"
+                  id=""
+                  class="cor-filter__radios2"
+                />
               </div>
             </form>
             <form class="menu-porte__content-desktop">
               <p class="cor-filter__p">Porte</p>
               <div>
-
                 <div class="menu-porte__inputs">
                   <input type="checkbox" class="checkbox-input" />
                   <label for="" class="label-inputs">Pequeno</label>
@@ -204,176 +221,29 @@
             </form>
           </article>
           <div class="products-seller">
-          
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
+            <div class="sell-itens skeleton-item">
+              <img src="" class="dog-image" />
+              <div class="description-iten">
+                <p class="description-p"></p>
+              </div>
+              <div class="price-itens">
+                <p class="price-num"></p>
+                <p class="price-discount"></p>
+              </div>
             </div>
           </div>
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
-            </div>
-          </div>
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
-            </div>
-          </div>
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
-            </div>
-          </div>
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
-            </div>
-          </div>
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
-            </div>
-          </div>
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
-            </div>
-          </div>
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
-            </div>
-          </div>
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
-            </div>
-          </div>
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
-            </div>
-          </div>
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
-            </div>
-          </div>
-          <div class="sell-itens">
-            <img
-              src="../assets/img/roupas/dog-yellow-tshirt.svg"
-              class="dog-image"
-            />
-            <div class="description-iten">
-              <p class="description-p">Roupinha - Sofi Wear</p>
-            </div>
-            <div class="price-itens">
-              <p class="price-num">R$55,99</p>
-              <p class="price-discount">R$78,99</p>
-            </div>
-          </div>
-        </div>
         </article>
         <!-- Aqui finalizo os produtos -->
 
         <!-- Aqui é onde vai pra proxima pagina -->
         <article class="next-page__container">
           <button class="button-back">
-            <img src="../assets/img/icons/back-page.svg" alt="" />
+            <img src="./assets/img/icons/back-page.svg" alt="" />
           </button>
 
           <div><p class="number-page">1 | 4</p></div>
           <button class="button-next">
-            <img src="../assets/icon/next-page.svg" alt="" />
+            <img src="./assets/icon/next-page.svg" alt="" />
           </button>
         </article>
         <!-- Finalizado a proxima pagina -->
@@ -391,7 +261,21 @@
           <div class="produtos-semelhantes__seller" id="container-arrastar">
             <div class="sell-itens">
               <img
-                src="../assets/img/roupas/dog-yellow-tshirt.svg"
+                src="./assets/img/roupas/dog-yellow-tshirt.svg"
+                class="dog-image"
+              />
+              <div class="description-iten">
+                <p class="description-p">Roupinha - Sofi Wear</p>
+              </div>
+              <div class="price-itens">
+                <p class="price-num">R$55,99</p>
+                <p class="price-discount">R$78,99</p>
+              </div>
+            </div>
+
+            <div class="sell-itens">
+              <img
+                src="./assets/img/roupas/dog-yellow-tshirt.svg"
                 class="dog-image"
               />
               <div class="description-iten">
@@ -419,21 +303,7 @@
 
             <div class="sell-itens">
               <img
-                src="../assets/img/roupas/dog-yellow-tshirt.svg"
-                class="dog-image"
-              />
-              <div class="description-iten">
-                <p class="description-p">Roupinha - Sofi Wear</p>
-              </div>
-              <div class="price-itens">
-                <p class="price-num">R$55,99</p>
-                <p class="price-discount">R$78,99</p>
-              </div>
-            </div>
-
-            <div class="sell-itens">
-              <img
-                src="../assets/img/roupas/dog-yellow-tshirt.svg"
+                src="./assets/img/roupas/dog-yellow-tshirt.svg"
                 class="dog-image"
               />
               <div class="description-iten">
@@ -453,7 +323,7 @@
           <!-- sobre o sofisticao -->
           <div class="footer-group-1">
             <img
-              src="../assets/img/sofisticao-white.svg"
+              src="./assets/img/sofisticao-white.svg"
               alt=""
               class="footer-group-1__img"
             />
@@ -468,15 +338,15 @@
           <div class="footer-group-2">
             <div class="footer-group-2__content">
               <div class="footer-group-2__mapin">
-                <img src="../assets/icon/map-pin.svg" alt="" />
+                <img src="./assets/icon/map-pin.svg" alt="" />
                 <p class="footer-group-1__p">São Paulo | Brasil</p>
               </div>
               <div class="footer-group-2__phone">
-                <img src="../assets/icon/phone.svg" alt="" />
+                <img src="./assets/icon/phone.svg" alt="" />
                 <p class="footer-group-1__p">+55 (11) 92368-7277</p>
               </div>
               <div class="footer-group-2__mail">
-                <img src="../assets/icon/mail.svg" alt="" />
+                <img src="./assets/icon/mail.svg" alt="" />
                 <p class="footer-group-1__p">sofisticao@sofi.com</p>
               </div>
             </div>
@@ -486,22 +356,23 @@
           <div class="footer-group-3">
             <button class="button-group-3">
               <p class="button-group-3__p">Pontos de venda</p>
-              <img src="../assets/icon/chevron-down.svg" alt="" />
+              <img src="./assets/icon/chevron-down.svg" alt="" />
             </button>
             <button class="button-group-3">
               <p class="button-group-3__p">Categorias</p>
-              <img src="../assets/icon/chevron-down.svg" alt="" />
+              <img src="./assets/icon/chevron-down.svg" alt="" />
             </button>
             <button class="button-group-3">
               <p class="button-group-3__p">Redes sociais</p>
-              <img src="../assets/icon/chevron-down.svg" alt="" />
+              <img src="./assets/icon/chevron-down.svg" alt="" />
             </button>
           </div>
         </footer>
         <!-- footer final -->
       </section>
     </main>
-    <script src="../js/menuFilters.js"></script>
-    <script src="../js/navbar-shop.js"></script>
+    <script src="./js/shop/products.js" type="module"></script>
+    <script src="./js/menuFilters.js"></script>
+    <script src="./js/navbar-shop.js"></script>
   </body>
 </html>

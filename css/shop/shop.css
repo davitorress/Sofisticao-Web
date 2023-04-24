@@ -1,4 +1,9 @@
 @import "../globalStyles.css";
+
+.skeleton-item {
+  display: none !important;
+}
+
 /* Header */
 .container {
   width: 100%;
