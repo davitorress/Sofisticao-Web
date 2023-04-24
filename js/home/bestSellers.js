@@ -11,7 +11,7 @@ const bestSellers = document.querySelector("#best-sellers .products-list");
 for (let i = 0; i < 6; i++) {
 	const cloneItem = document.querySelector("#best-sellers .product-item.skeleton-item").cloneNode(true);
 
-	cloneItem.querySelector("img").src = sortedProducts[i].imagem[0];
+	cloneItem.querySelector("img").src = sortedProducts[i].imagem;
 	cloneItem.querySelector("img").alt = sortedProducts[i].nome;
 	cloneItem.querySelector(".description-item p").innerText = sortedProducts[i].nome;
 	cloneItem.querySelector(".price-num").innerText = `R$${sortedProducts[i].preco}`;
