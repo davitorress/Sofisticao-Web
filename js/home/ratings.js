@@ -18,7 +18,6 @@ ratingPrev.addEventListener("click", () => {
 
 ratingNext.addEventListener("click", () => {
 	currentRating++;
-	console.log("frente");
 	if (currentRating > ratingCarousel.childElementCount) {
 		currentRating = 1;
 	}

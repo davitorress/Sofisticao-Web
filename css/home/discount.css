@@ -1,5 +1,3 @@
-@import "./globalStyles.css";
-
 #discount {
 	display: flex;
 	flex-direction: column;

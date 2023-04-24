@@ -1,5 +1,3 @@
-@import "./globalStyles.css";
-
 #best-sellers {
 	display: flex;
 	flex-direction: column;

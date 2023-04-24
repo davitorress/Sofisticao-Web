@@ -1,5 +1,3 @@
-@import "./globalStyles.css";
-
 #ratings {
 	display: flex;
 	flex-direction: column;
