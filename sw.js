@@ -8,8 +8,10 @@ importScripts(
 // files to cache
 const filesToCache = [
   "offline.html",
+  "css/globalStyles.css",
   "css/pwa.css",
   "assets/img/orange-logo.svg",
+  "assets/pwa-icons/offline-illustration.svg"
 ];
 
 self.addEventListener("install", (event) => {
