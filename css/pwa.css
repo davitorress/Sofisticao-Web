@@ -1,5 +1,7 @@
 
 
+@import url('globalStyles.css');
+
 .pwa__alert{
     display: flex;
     position: fixed;
@@ -57,8 +59,39 @@
     font-family: var(--estedad-vf);
 }
 
+.offline__container{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 3rem;
+}
+
+.offline__container h3{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--black-color);
+    margin-bottom: 0;
+    font-family: var(--subtitle-text), sans-serif;
+    margin: 0;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+@media(max-width: 800px){
+
+.offline__container h3{
+    font-size: 2.4rem;
+}
+
+}
 
 @media(max-width: 768px){
+
     .pwa__alert.show{
         transform: translateY(0);
         transition: all .3s ease-in-out;
