@@ -41,3 +41,9 @@ product.porte.forEach((porte) => {
   input.classList.add("input-size__checkbox");
   input_sizes.appendChild(input);
 });
+
+const idd = window.location.search.split("=")[1];
+const button_add = document.querySelector(".add-produto");
+button_add.addEventListener("click",() =>{
+    window.location.href = "cart.html?id=" + idd;
+});
