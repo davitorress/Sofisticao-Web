@@ -378,6 +378,9 @@ color: #000000;
     display: flex;
     justify-content: space-between;
 }
+.moreqtd{
+	cursor: pointer;
+}
 
 /* responsividade */
 @media(max-width:768px){
