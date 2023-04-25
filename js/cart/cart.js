@@ -12,6 +12,8 @@ const product = await fetch(
     content_cart.querySelector("img").src = product.imagem;
 content_cart.querySelector(".title-product").innerText = product.nome;
 content_cart.querySelector(".tamanho").innerText = product.porte;
+content_cart.querySelector(".price-num__cart").innerText = "R$" + product.preco ;
+content_cart.querySelector(".price-discount__cart").innerText = "R$" +product.preco_desc;
 
 
   
