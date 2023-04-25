@@ -16,7 +16,7 @@ const qtdProducts = document.getElementById("qtd-btn");
 let number_qtd = 1;
 qtdProducts.innerHTML = number_qtd;
 
-let temporario = product.preco * number_qtd;
+
 
 more_btn.addEventListener("click", () => {
   number_qtd++;
@@ -26,7 +26,9 @@ less_btn.addEventListener("click", () => {
   if (number_qtd === 1) {
     return;
   } else {
+
     number_qtd--;
+
   }
   qtdProducts.innerHTML = number_qtd;
 });
@@ -36,6 +38,6 @@ const content_cart = content_section.querySelector(".buy-product__imgDesc");
 content_cart.querySelector("img").src = product.imagem;
 content_cart.querySelector(".title-product").innerText = product.nome;
 content_cart.querySelector(".tamanho").innerText = product.porte;
-content_cart.querySelector(".price-num__cart").innerHTML = "R$" + temporario;
-content_cart.querySelector(".price-discount__cart").innerText =
+content_cart.querySelector(".price-num__cart").innerHTML = "R$" +  product.preco;
+content_cart.querySelector(".price-discount__cart").innerHTML =
   "R$" + product.preco_desc;
