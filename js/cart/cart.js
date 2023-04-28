@@ -13,14 +13,18 @@ const product = await fetch(
 const more_btn = document.getElementById("more");
 const less_btn = document.getElementById("less");
 const qtdProducts = document.getElementById("qtd-btn");
+const totalPrice = document.getElementById("total-price");
 let number_qtd = 1;
 qtdProducts.innerHTML = number_qtd;
+let total = 0;
+totalPrice.innerHTML =  number_qtd * product.preco;
 
 
 
 more_btn.addEventListener("click", () => {
   number_qtd++;
   qtdProducts.innerHTML = number_qtd;
+  totalPrice.innerHTML = number_qtd * product.preco;
 });
 less_btn.addEventListener("click", () => {
   if (number_qtd === 1) {
@@ -31,6 +35,8 @@ less_btn.addEventListener("click", () => {
 
   }
   qtdProducts.innerHTML = number_qtd;
+  totalPrice.innerHTML = number_qtd * product.preco;
+
 });
 
 const content_section = document.querySelector(".buy-product__container");
